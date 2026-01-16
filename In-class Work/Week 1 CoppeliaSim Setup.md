@@ -28,9 +28,16 @@
     <img src="Pic/gui.png" width="800"/>
   
 
-## 2. Bind Python to CoppeliaSim
-- [ ] - [ ] - [ ] 
+## 2. Coding Basics
+- [ ] You can expand the list in the "Scene Hierarchy". You will see a file named “Script”. It is an "embedded script" in the scene. 
+- [ ] In the "kinematics folder -> twoRobotsIK.ttt" example, the script is written in Lua.
+- [ ] Read these pages in official manual to grab some understandings: https://manual.coppeliarobotics.com/
+ ** The "Writing code" page
+ ** The "Embedded scripts" page
+ ** The "Lua vs Python scripts" page
 
+    <img src="Pic/lua.png" width="800"/>
+    
 🎉 **No Check Point**. Make sure you finish the tasks.
 
 -------------------
