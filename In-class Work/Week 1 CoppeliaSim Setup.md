@@ -19,11 +19,13 @@
 
   For example, open "kinematics folder -> twoRobotsIK.ttt"
 
-- [ ] Run the scene file to execute the simulation.
+- [ ] Run the scene to execute the simulation.
+  
   On Bottom of the CoppeliaSim main window, you can see a "Console".
 
-  There should be no error.
+  There should be no error in Console.
 
+    <img src="Pic/gui.png" width="800"/>
   
 
 ## 2. Bind Python to CoppeliaSim
