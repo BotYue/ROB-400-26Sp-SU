@@ -15,7 +15,7 @@
 
 - [ ] In the Scene hierarchy (left panel), observe the joint–link structure of the robot.
 
-- [ ] The world frame is displayed in the corner of the scene view: the X-axis points to the right, the Y-axis points upward, the 
+- [ ] The world frame is displayed in the corner of the scene view: the X-axis (red) points to the right, the Y-axis (green) points upward, the 
 Z-axis is perpendicular to the 2D plane.
 
 - [ ] If you want to zoom in/out, you can select Scene hierarchy -> DefaultZViewCamera, change the value in ``ortho. size [m]``; If you want to move the scene up/down/left/right, hold the middle mouse button and drag the mouse.
