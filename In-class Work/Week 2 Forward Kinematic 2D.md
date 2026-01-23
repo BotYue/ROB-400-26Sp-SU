@@ -19,5 +19,12 @@ Z-axis is perpendicular to the 2D plane.
 
     <img src="Pic/week2_pic1.png" width="700"/>
 
+- [ ] Try to use "Joint tool" to rorate the two joints. To do so: <br>click one joint in Scene hierarchy, then go to "Modules -> Kinematics -> Joint tool", it will pop out a small window showing angle adjustment. <br>Feel free to play with any angles for the given two joints.
+
+    <img src="Pic/week2_pic2.png" width="700"/>
+
+- [ ] After rotating the joints, the final position of the end-effector can be viewed by:<br> click the "tip" in Scene hierarchy, then the `x: ..., y: ..., z:...` info will be displayed on top of the scene view.
+
+
 
 ---
