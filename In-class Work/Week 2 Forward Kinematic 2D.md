@@ -17,6 +17,7 @@
 - [ ] The world frame is displayed in the corner of the scene view: the X-axis points to the right, the Y-axis points upward, the 
 Z-axis is perpendicular to the 2D plane.
 
+    <img src="Pic/week2_pic1.png" width="700"/>
 
 
 ---
