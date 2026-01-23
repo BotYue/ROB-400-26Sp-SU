@@ -6,7 +6,7 @@
 
 
 ------------------
-## 1. Two-DOF planar manipulator
+## 1. Two-DoF planar manipulator
 
 - [ ] Download the  provided ``Asset/week2_2DoF_planar.ttt`` scene file. 
 
@@ -39,7 +39,7 @@ Apply the given joint angles in CoppeliaSim by rotating the joints. Write down t
 
 
 ------------------
-## 2. Three-DOF planar manipulator
+## 2. Three-DoF planar manipulator
 
 - [ ] Download the  provided ``Asset/week2_3DoF_planar.ttt`` scene file. 
 
@@ -51,3 +51,14 @@ Apply the given joint angles in CoppeliaSim by rotating the joints. Write down t
 
     <img src="Pic/week2_pic3.png" width="700"/>
   
+### :page_facing_up: Task to complete:
+- [ ] Use the given rotating angles in the worksheet. Do:
+      
+  * **Analytical calculation**
+Using the forward kinematics derived in lecture, write out the linear algebra calculation steps in the provided worksheet. Clearly show how the joint angles are used to compute the end-effector position.
+
+  * **Simulation verification**
+Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Tip") position in the provided worksheet.
+
+--------  
+🎉 **Submit your worksheet**. Also let the instructor to verify your simulation result of the 3-DoF manipulator.
