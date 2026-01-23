@@ -11,6 +11,7 @@
 - [ ] Download the  provided ``Asset/week2_2DoF_planar.ttt`` scene file. 
 
 - [ ] Open the file in CoppeliaSim. You will see a two-DOF planar manipulator.
+<br>For this manipulator, both links have a **length of 0.5 m.**
 
 - [ ] In the Scene hierarchy (left panel), observe the joint–link structure of the robot.
 
@@ -25,6 +26,13 @@ Z-axis is perpendicular to the 2D plane.
 
 - [ ] After rotating the joints, the final position of the end-effector can be viewed by:<br> click the "tip" in Scene hierarchy, then the `x: ..., y: ..., z:...` info will be displayed on top of the scene view.
 
+### :page_facing_up: Task to complete:
+- [ ] Use the given rotating angles in the worksheet. Do:
+      
+  * **Analytical calculation**
+Using the forward kinematics derived in lecture, write out the linear algebra calculation steps in the provided worksheet. Clearly show how the joint angles are used to compute the end-effector position.
 
+  * **Simulation verification**
+Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Tip") position in the provided worksheet.
 
 ---
