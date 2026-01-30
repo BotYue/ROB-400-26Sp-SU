@@ -36,9 +36,9 @@ C:\Users\YC\AppData\Local\Microsoft\WindowsApps\python.exe
 
 ------
 
-## 1. Two-DoF planar manipulator
+## 1. Three-DoF planar manipulator
 
-- [ ] Download the  provided ``Asset/week2_2DoF_planar.ttt`` scene file. 
+- [ ] Download the  provided ``Asset/week3_3DoF_FK.ttt`` scene file. 
 
 
 --------
