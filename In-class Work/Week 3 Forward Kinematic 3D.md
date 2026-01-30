@@ -41,12 +41,12 @@ C:\Users\YC\AppData\Local\Microsoft\WindowsApps\python.exe
 - [ ] Download the  provided ``Asset/week3_3DOF_FK.ttt`` scene file. 
 - [ ] In the Scene hierarchy (left panel), click "tip". Then go to "Modules -> Kinematics -> Denavit–Hartenberg Extractor". You will see a list of DH parameters in the Console.
 
+<img src="Pic/week3_DH extract.png" width="700"/>
+
 - [ ] Open the Scipt (under base in the tree list). There are 2 incomplete parts for you to fill (the ``?`` part)
 
 * ```local function dh_T(a,d,alpha,theta)``` Use the math equation of DH to complete.
 * ```local DH = {...}``` Use the numbers from Denavit–Hartenberg Extractor to fill.
-
-<img src="Pic/week3_DH extract.png" width="700"/>
 
 - [ ] Once complete coding, run the simulation. You should see the numbers matching in the Console output. Such as:
 
@@ -54,9 +54,14 @@ C:\Users\YC\AppData\Local\Microsoft\WindowsApps\python.exe
 
 The Sim Tip is the end-effector position from the Simulation. The DH Top is the end-effector position based on the calculation you implemented in code.
     
-- [ ] Use the given rotating angles (theta) in the worksheet. Based on the DH parameters Do:
- Analytical calculation Using the forward kinematics derived in lecture, write out the linear algebra calculation steps in the provided worksheet. Clearly show how the joint angles are used to compute the end-effector position.
+### :page_facing_up: Task to complete:
+- [ ] Use the given rotating angles in the worksheet. Do:
+      
+  * **Analytical calculation**
+Using DH parameter-based forward kinematics from lecture, write out the linear algebra calculation steps in the provided worksheet. Clearly show each matrix.
 
+  * **Simulation verification**
+Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Tip") position in the provided worksheet.
 
 --------
 🎉 **Submit your worksheet**. Also let the instructor to verify your simulation result of the 3-DoF manipulator.
