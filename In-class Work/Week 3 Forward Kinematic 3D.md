@@ -93,5 +93,12 @@ Or I listed as a table here:
 
 <img src="Pic/week3_UR10.png" width="700"/>
 
+### :page_facing_up: Task to complete:
+- [ ] Use the given rotating angles in the worksheet. Do:
+      
+  * **Simulation verification**
+Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Sim Tip") position in the provided worksheet.  Write down the code-calculated end-effector ("DH Tip") position in the provided worksheet.
+
+
 --------
-🎉 **Submit your worksheet**. Also let the instructor to verify your simulation result of the 3-DoF manipulator.
+🎉 **Submit your worksheet**. Also let the instructor to verify your simulation result.
