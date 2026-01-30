@@ -87,7 +87,7 @@ Or I listed as a table here:
 - [ ] Similarly, In the Script, there are 2 incomplete parts for you to fill (the ``?`` part)
 
 * ```local function dh_T(a,d,alpha,theta)``` Use the math equation of DH to complete.
-* ```local DH = {...}``` Use the numbers from UR10 robot official manual.
+* ```local DH = {...}``` Use the data from UR10 robot official manual. The theta_offset is already entered.
 
 - [ ] Once complete coding, run the simulation. You should see the numbers closely matching in the Console output. (The will be some minor off due to simulator shapes or calculation rounding). For example:
 
