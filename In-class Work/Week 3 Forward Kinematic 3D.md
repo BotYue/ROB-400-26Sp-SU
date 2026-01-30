@@ -64,6 +64,13 @@ Using DH parameter-based forward kinematics from lecture, write out the linear a
 Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Sim Tip") position in the provided worksheet.  Write down the code-calculated end-effector ("DH Tip") position in the provided worksheet.
 
 * *Note: Due to coordinate-frame conventions in CoppeliaSim, the x–y position computed from DH parameters may appear sign-flipped or mirrored relative to the simulation display.*
-  
+
+
+## 2. Six-DoF manipulator DH & FK
+
+- [ ] Download the  provided ``Asset/week3_6DOF_FK.ttt`` scene file.
+- [ ] Similarly, in the Scene hierarchy (left panel), click "tip". Then go to "Modules -> Kinematics -> Denavit–Hartenberg Extractor". Obtain a list of DH parameters in the Console.
+
+- [ ] 
 --------
 🎉 **Submit your worksheet**. Also let the instructor to verify your simulation result of the 3-DoF manipulator.
