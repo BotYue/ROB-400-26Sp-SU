@@ -69,6 +69,7 @@ Apply the given joint angles in CoppeliaSim by rotating the joints. Write down t
 ## 2. UR10 Robot DH & FK
 
 - [ ] Download the  provided ``Asset/week3_UR10_FK.ttt`` scene file.
+      
 - [ ] The DH parameters of the UR10 robot (Universal Robots) is provided on its official manual:
 https://www.universal-robots.com/articles/ur/application-installation/dh-parameters-for-calculations-of-kinematics-and-dynamics/
 
@@ -83,7 +84,14 @@ Or I listed as a table here:
 | 5 | 0       | 0.1157   | -π/2 |
 | 6 | 0       | 0.0922   | 0    |
 
+- [ ] Similarly, In the Script, there are 2 incomplete parts for you to fill (the ``?`` part)
 
-- [ ] 
+* ```local function dh_T(a,d,alpha,theta)``` Use the math equation of DH to complete.
+* ```local DH = {...}``` Use the numbers from UR10 robot official manual.
+
+- [ ] Once complete coding, run the simulation. You should see the numbers closely matching in the Console output. (The will be some minor off due to simulator shapes or calculation rounding). For example:
+
+<img src="Pic/week3_UR10.png" width="700"/>
+
 --------
 🎉 **Submit your worksheet**. Also let the instructor to verify your simulation result of the 3-DoF manipulator.
