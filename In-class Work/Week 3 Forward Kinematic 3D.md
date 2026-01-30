@@ -61,7 +61,7 @@ The Sim Tip is the end-effector position from the Simulation. The DH Top is the 
 Using DH parameter-based forward kinematics from lecture, write out the linear algebra calculation steps in the provided worksheet. Clearly show each matrix.
 
   * **Simulation verification**
-Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Tip") position in the provided worksheet.
+Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Sim Tip") position in the provided worksheet.  Write down the code-calculated end-effector ("DH Tip") position in the provided worksheet.
 
 * *Note: Due to coordinate-frame conventions in CoppeliaSim, the x–y position computed from DH parameters may appear sign-flipped or mirrored relative to the simulation display.*
   
