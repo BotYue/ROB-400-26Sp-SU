@@ -66,10 +66,23 @@ Apply the given joint angles in CoppeliaSim by rotating the joints. Write down t
 * *Note: Due to coordinate-frame conventions in CoppeliaSim, the x–y position computed from DH parameters may appear sign-flipped or mirrored relative to the simulation display.*
 
 
-## 2. Six-DoF manipulator DH & FK
+## 2. UR10 Robot DH & FK
 
-- [ ] Download the  provided ``Asset/week3_6DOF_FK.ttt`` scene file.
-- [ ] Similarly, in the Scene hierarchy (left panel), click "tip". Then go to "Modules -> Kinematics -> Denavit–Hartenberg Extractor". Obtain a list of DH parameters in the Console.
+- [ ] Download the  provided ``Asset/week3_UR10_FK.ttt`` scene file.
+- [ ] The DH parameters of the UR10 robot (Universal Robots) is provided on its official manual:
+https://www.universal-robots.com/articles/ur/application-installation/dh-parameters-for-calculations-of-kinematics-and-dynamics/
+
+Or I listed as a table here:
+
+| Joint | a (m)  | d (m)   | α (rad) |
+|------:|:------:|:-------:|:-------:|
+| 1 | 0       | 0.1273   | π/2  |
+| 2 | -0.612  | 0        | 0    |
+| 3 | -0.5723 | 0        | 0    |
+| 4 | 0       | 0.163941 | π/2  |
+| 5 | 0       | 0.1157   | -π/2 |
+| 6 | 0       | 0.0922   | 0    |
+
 
 - [ ] 
 --------
