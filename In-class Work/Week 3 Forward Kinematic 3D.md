@@ -28,7 +28,7 @@ C:\Users\YC\anaconda3\python.exe
 C:\Users\YC\AppData\Local\Microsoft\WindowsApps\python.exe
 ```
 
-- [ ] Copy the anaconda path, then modify the specific line in the "usrset.txt" file.
+- [ ] Copy the anaconda path, then modify the specific line with `defaultPython` in the "usrset.txt" file.
 
 <img src="Pic/python bind2.png" width="700"/>
 
