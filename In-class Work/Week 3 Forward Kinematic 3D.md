@@ -43,10 +43,10 @@ C:\Users\YC\AppData\Local\Microsoft\WindowsApps\python.exe
 
 - [ ] Open the Scipt (under base in the tree list). There are 2 incomplete parts for you to fill (the ``?`` part)
 
-* ```local function dh_T(a,d,alpha,theta)```
-* ```local DH = {...}```
+* ```local function dh_T(a,d,alpha,theta)``` Use the math equation of DH to complete.
+* ```local DH = {...}``` Use the numbers from Denavit–Hartenberg Extractor to fill.
 
-Use what you learned in class to complete
+<img src="Pic/week3_DH extract.png" width="700"/>
 
 - [ ] Once complete coding, run the simulation. You should see the numbers matching in the Console output. Such as:
 
