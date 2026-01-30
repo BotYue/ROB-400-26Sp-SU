@@ -99,7 +99,7 @@ Or I listed as a table here:
   * **Simulation verification**
 Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector ("Sim Tip") position in the provided worksheet.  Write down the code-calculated end-effector ("DH Tip") position in the provided worksheet.
 
-  * **Simulation verification**
+  * **Code**
 Write down the complete code for ```local function dh_T(a,d,alpha,theta)```
 
 --------
