@@ -8,15 +8,15 @@
 ------------------
 ## 0. Bind Python for CoppeliaSim Script (Optional)
 
-- [ ] From the scene folder, open "simpleThreadedAndNonThreadedExample-python.ttt". Try to run it, you will typically get an error. This indicates that Python is not binded for the CoppeliaSim Script. You should also be able to see a line in the Console below:
+- [ ] From the scene folder, open "simpleThreadedAndNonThreadedExample-python.ttt". Try to run it. You should see an error message in the Console as below:
 
-```shell
-The Python interpreter could not be called. It is currently set as: 'py'. You can specify it in C:\....../CoppeliaSim/usrset.txt with 'defaultPython', or via the named string parameter 'python' from the command line
-```
+> The Python interpreter could not be called. It is currently set as: 'py'. You can specify it in ....../CoppeliaSim/usrset.txt with 'defaultPython', or via the named string parameter 'python' from the command line
 
-- [] Now, you just need to find your python path in your local computer. Then write it into the "usrset.txt" file.
+<img src="Pic/python bind1.png" width="700"/>
+    
+- [ ] Now, you just need to find your python path in your local computer. Then modify the "usrset.txt" file.
 
-- [] For example, if you use Anaconda in Windows, open **Anaconda Prompt**  and type:
+- [ ] For example, if you use Anaconda in Windows, open **Anaconda Prompt**  and type:
 ```shell
 where python
 ```
@@ -27,11 +27,14 @@ Example output:
 C:\Users\YC\anaconda3\python.exe
 C:\Users\YC\AppData\Local\Microsoft\WindowsApps\python.exe
 ```
-Copy the anaconda path to the specific lin in the txt file
 
-Then try the scene again.,
+- [ ] Copy the anaconda path, then modify the specific line in the "usrset.txt" file.
 
+<img src="Pic/python bind2.png" width="700"/>
 
+- [ ] Reopen CoppeliaSim, run the same scene again. Your Python will work now.
+
+------
 
 ## 1. Two-DoF planar manipulator
 
