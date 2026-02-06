@@ -67,13 +67,13 @@ kuka_kr5_support/
 <img src="Pic/urdf_3.png" width="700"/>
 
 ### :page_facing_up: Task to complete:
-- [ ] Load the required robot URDF based on the Worksheet
+- [ ]  Load the required robot URDF based on the Worksheet
      
-- [ ] Save the CoppeliaSim scene for check. It will be checked when you submit the Worksheet.
+  * Save the CoppeliaSim scene for check. It will be checked when you submit the Worksheet.
 
-- [ ] Write down the (x, y, z) position of the end effector in the default configuration.
+  * Write down the (x, y, z) position of the end effector in the default configuration.
 
-- [ ] Write down the (x, y, z) position of the end effector when you rotate the first joint by 90 deg (nearest to base).
+  * Write down the (x, y, z) position of the end effector when you rotate the first joint by 90 deg (nearest to base).
 
 ---
 
@@ -85,7 +85,7 @@ The **Unimation PUMA** is a classic industrial robot that has been widely used i
 * [ ] Follow the same procedure as Section 1 to download and load the **PUMA 560** URDF to CoppeliaSim.
 
       
-* [ ] The DH parameters of this robot are
+* [ ] The DH parameters of the PUMA 560 robot are
 
 | Joint |  a (m) |  d (m)  |  α (rad) |
 | ----: | :----: | :-----: | :------: |
@@ -96,9 +96,19 @@ The **Unimation PUMA** is a classic industrial robot that has been widely used i
 |     5 |    0   |    0    | -π/2 |
 |     6 |    0   |    0    |     0    |
 
+    
+### :page_facing_up: Task to complete:
+- [ ] Use the given rotating angles in the worksheet. Do:
+
+  * **Python calculation**
+Use Python code to calculate the end-effector position of PUMA 560. Write down the Python calculated position in the provided worksheet. 
+
+  * **Simulation verification**
+Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector position in the provided worksheet. 
 
 
-can be calculate using the following code
+> [!NOTE]
+> The Python code is partially provided as follows.
 
 ```python
 import numpy as np
@@ -131,7 +141,7 @@ def calculate_fk_standard(joint_angles_deg):
         
     return T_total[:3, 3]
 
-# --- set your joints in deg ---
+# Set your joints in deg
 my_joints = [0, 0, 135, 0, 0, 0] 
 pos = calculate_fk_standard(my_joints)
 
