@@ -8,9 +8,11 @@
 ------------------
 ## 1. Load URDF
 
-- [ ] Download the  provided ``Asset/week2_2DoF_planar.ttt'' scene file. 
+- [ ] Visit this Repo https://github.com/Daniella1/urdf_files_dataset. It contains URDF files for many robots.
 
-- [ ] Open the file in CoppeliaSim. You will see a two-DOF planar manipulator.
+- [ ] **Locate the folder that coresponds to the robot in your Worksheet**
+
+- [ ] s
 
 
 
