@@ -106,6 +106,7 @@ Use Python code to calculate the end-effector position of PUMA 560. Write down t
   * **Simulation verification**
 Apply the given joint angles in CoppeliaSim by rotating the joints. Write down the simulated end-effector position in the provided worksheet. 
 
+* *Note: The calculated result may appear slightly off to the simulation display.*
 
 > [!NOTE]
 > The Python code is partially provided here
