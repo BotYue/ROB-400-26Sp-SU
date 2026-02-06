@@ -73,7 +73,7 @@ kuka_kr5_support/
 
 - [ ] Write down the (x, y, z) position of the end effector in the default configuration.
 
-- [ ] Write down the (x, y, z) position of the end effector when you rotate the first joint by 90 deg.
+- [ ] Write down the (x, y, z) position of the end effector when you rotate the first joint by 90 deg (nearest to base).
 
 ---
 
@@ -96,3 +96,47 @@ The **Unimation PUMA** is a classic industrial robot that has been widely used i
 |     5 |    0   |    0    | -π/2 |
 |     6 |    0   |    0    |     0    |
 
+
+
+can be calculate using the following code
+
+```python
+import numpy as np
+
+def get_standard_dh_matrix(a, alpha, d, theta):
+    return np.array([
+        [??, ??,  ??, ??],
+        [??,  np.cos(theta)*np.cos(alpha), -np.cos(theta)*np.sin(alpha), a*np.sin(theta)],
+        [??,              np.sin(alpha),               np.cos(alpha),              d],
+        [0,              0,                           0,                          1]
+    ])
+
+def calculate_fk_standard(joint_angles_deg):
+    q = np.radians(joint_angles_deg)
+    
+    # Standard DH Table
+    # [a, alpha, d, theta]
+    dhparams = [
+        (0,       np.pi/2,  0.6718,  q[0]), 
+        (0.4318,  0,        0,       q[1]), 
+        (??, ??,  ??, np.pi - q[2]),
+        (??, ??,  ??, q[3]), 
+        (??, ??,  ??, q[4]),
+        (0,       0,        0,       q[5]) 
+    ]
+
+    T_total = np.eye(4)
+    for a, alpha, d, theta in dhparams:
+        T_total = T_total @ get_standard_dh_matrix(a, alpha, d, theta)
+        
+    return T_total[:3, 3]
+
+# --- set your joints in deg ---
+my_joints = [0, 0, 135, 0, 0, 0] 
+pos = calculate_fk_standard(my_joints)
+
+print(f"End-effector Position at {my_joints}:")
+print(f"X: {pos[0]:.4f} m")
+print(f"Y: {pos[1]:.4f} m")
+print(f"Z: {pos[2]:.4f} m")
+```
