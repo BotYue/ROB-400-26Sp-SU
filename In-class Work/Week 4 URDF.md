@@ -63,4 +63,9 @@ kuka_kr5_support/
 * [ ] Go to "Modules -> Importers -> URDF Importer". Use the default import setting.
 * [ ] You should see the robot in the simulator now!
 
+
+<img src="Pic/urdf_3.png" width="700"/>
+
 ---
+
+## 2. PUMA URDF & Forward Kinematics
