@@ -83,7 +83,7 @@ The **Unimation PUMA** is a classic industrial robot that has been used in many 
 
 * [ ] Start a **new scene** in your simulator.
 * [ ] Follow the same procedure as Section 1 to download and load the **PUMA 560** URDF to CoppeliaSim.
-
+* [ ] Position the base "link1_visual" at x=0.0000, y=0.0000, z=0.0000 (Click it, then Click "Object/Item Shift")
       
 * [ ] The DH parameters of the PUMA 560 robot are
 
@@ -129,7 +129,7 @@ def calculate_fk_standard(joint_angles_deg):
     dhparams = [
         (0,       np.pi/2,  0.6718,  q[0]), 
         (0.4318,  0,        0,       q[1]), 
-        (??, ??,  ??, np.pi - q[2]),
+        (??, ??,  ??, q[2] - np.pi),
         (??, ??,  ??, q[3]), 
         (??, ??,  ??, q[4]),
         (0,       0,        0,       q[5]) 
