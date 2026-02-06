@@ -69,3 +69,34 @@ kuka_kr5_support/
 ---
 
 ## 2. PUMA URDF & Forward Kinematics
+
+The Unimation PUMA 560 is a classic industrial robot that has been used in many robotics textbooks for years.
+Here’s a polished, worksheet-style version (clear + corrected wording, same meaning):
+
+---
+
+## 2. PUMA URDF & Forward Kinematics
+
+The **Unimation PUMA** is a classic industrial robot that has been widely used in robotics textbooks for decades.
+
+* [ ] Start a **new scene** in your simulator.
+* [ ] Follow the same procedure as Section 1 to download and load the **PUMA 560** URDF to CoppeliaSim.
+
+      
+* [ ] The DH parameters of this robot are
+
+| Joint |  a (m) |  d (m)  |  α (rad) |
+| ----: | :----: | :-----: | :------: |
+|     1 |    0   |  0.6718 | +π/2 |
+|     2 | 0.4318 |    0    |     0    |
+|     3 | 0.0203 | 0.15005 | -π/2 |
+|     4 |    0   |  0.4318 | +π/2|
+|     5 |    0   |    0    | -π/2 |
+|     6 |    0   |    0    |     0    |
+
+
+
+
+> If the robot loads but appears invisible, re-check the URDF mesh file paths (`package://...`) and fix them to relative paths as in Section 1.
+
+---
