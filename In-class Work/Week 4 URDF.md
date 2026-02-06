@@ -6,13 +6,24 @@
 
 
 ------------------
-## 1. Load URDF
+## 1. Load a URDF
 
-- [ ] Visit this Repo https://github.com/Daniella1/urdf_files_dataset. It contains URDF files for many robots.
+* [ ] Go to the URDF dataset repo: [https://github.com/Daniella1/urdf_files_dataset](https://github.com/Daniella1/urdf_files_dataset)
+  This repo contains URDF files for many different robots.
 
-- [ ] **Locate the folder that coresponds to the robot in your Worksheet**
+* [ ] Find the **folder that corresponds to the robot assigned in your Worksheet - Task 1**.
 
-- [ ] s
+* [ ] Download the URDF files using **one** of the options below:
+
+  **Option 1 — Download the full repository**
+
+  * [ ] Download/clone the entire GitHub repo (unzip ~1.7 GB). Then delete all after class to free storage.
+
+  **Option 2 — Download only your robot folder**
+
+  * [ ] Manually download the URDF + any related files inside your robot’s folder (such as `.stl`, `.dae`).
+
+
 
 
 
