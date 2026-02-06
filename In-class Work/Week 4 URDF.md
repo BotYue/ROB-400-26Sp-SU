@@ -79,7 +79,7 @@ kuka_kr5_support/
 
 ## 2. PUMA URDF & Forward Kinematics
 
-The **Unimation PUMA** is a classic industrial robot that has been widely used in robotics textbooks for decades.
+The **Unimation PUMA** is a classic industrial robot that has been used in many robotics textbooks for decades.
 
 * [ ] Start a **new scene** in your simulator.
 * [ ] Follow the same procedure as Section 1 to download and load the **PUMA 560** URDF to CoppeliaSim.
@@ -108,7 +108,7 @@ Apply the given joint angles in CoppeliaSim by rotating the joints. Write down t
 
 
 > [!NOTE]
-> The Python code is partially provided as follows.
+> The Python code is partially provided here
 
 ```python
 import numpy as np
