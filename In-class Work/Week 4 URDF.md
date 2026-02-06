@@ -66,12 +66,14 @@ kuka_kr5_support/
 
 <img src="Pic/urdf_3.png" width="700"/>
 
----
+### :page_facing_up: Task to complete:
+- [ ] Load the required robot URDF based on the Worksheet
+     
+- [ ] Save the CoppeliaSim scene for check. It will be checked when you submit the Worksheet.
 
-## 2. PUMA URDF & Forward Kinematics
+- [ ] Write down the (x, y, z) position of the end effector in the default configuration.
 
-The Unimation PUMA 560 is a classic industrial robot that has been used in many robotics textbooks for years.
-Here’s a polished, worksheet-style version (clear + corrected wording, same meaning):
+- [ ] Write down the (x, y, z) position of the end effector when you rotate the first joint by 90 deg.
 
 ---
 
@@ -94,9 +96,3 @@ The **Unimation PUMA** is a classic industrial robot that has been widely used i
 |     5 |    0   |    0    | -π/2 |
 |     6 |    0   |    0    |     0    |
 
-
-
-
-> If the robot loads but appears invisible, re-check the URDF mesh file paths (`package://...`) and fix them to relative paths as in Section 1.
-
----
