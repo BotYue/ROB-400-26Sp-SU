@@ -94,6 +94,7 @@ def BaseRz(q_angle):
 # -----------------------------
 # 1) Euler angles System I: z - x' - z'' 
 #    R = Rz(phi) * Rx(theta) * Rz(psi)
+# @ is the matrix multiplication operator in Python
 
 def R_euler_SystemI(phi, theta, psi):
     return BaseRz(phi) @ BaseRx(theta) @ BaseRz(psi)
