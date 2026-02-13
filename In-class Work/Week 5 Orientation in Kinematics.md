@@ -6,7 +6,7 @@
 
 
 ------------------
-## 1. Rotation in CoppeliaSim
+## 1. Visualize a Framein CoppeliaSim
 
 - [ ] Open a new scene in CoppeliaSim
 
@@ -24,6 +24,17 @@
 <img src="Pic/euler_1.png" width="650"/>
 
 
+------------------
+## 2. Rotate a Framein CoppeliaSim
+
+Next, we will perform Euler-angle rotation to this reference frame. 
+<br>Specifically, we will perform System I Euler-angle rotation (or called z-x′-z″)
+<br>We are about to rotate in this sequence: 
+* 20 deg about the OZ axis (or called z axis)
+* 30 deg about the rotated OU axis (or called x' axis)
+* 60 deg about the rotated OW axis (or called z'' axis)
+
+- [ ] Go to "Object Rotation", In "Rotation", firstly set to "Relative to own frame"
 
 
 ---
