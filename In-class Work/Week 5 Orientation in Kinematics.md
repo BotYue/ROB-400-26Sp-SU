@@ -63,3 +63,59 @@ We would like to verify whether the following two representations describe the s
   ( α = +28.xxx deg,; β = +9.xxx deg,; γ = +77.xxx deg )
 
 * Read ana complete the Python code
+
+```python
+import numpy as np
+
+def BaseRx(q_angle):
+    c, s = np.cos(q_angle), np.sin(q_angle)
+    return np.array([
+        [1, 0,  0],
+        [0, c, -s],
+        [0, s,  c]
+    ], dtype=float)
+
+def BaseRy(q_angle):
+    c, s = np.cos(q_angle), np.sin(q_angle)
+    return np.array([
+        [ c, 0, s],
+        [ 0, 1, 0],
+        [-s, 0, c]
+    ], dtype=float)
+
+def BaseRz(q_angle):
+    c, s = np.cos(q_angle), np.sin(q_angle)
+    return np.array([
+        [c, -s, 0],
+        [s,  c, 0],
+        [0,  0, 1]
+    ], dtype=float)
+
+# -----------------------------
+# 1) Euler angles System I: z - x' - z'' 
+#    R = Rz(phi) * Rx(theta) * Rz(psi)
+
+def R_euler_SystemI(phi, theta, psi):
+    return BaseRz(phi) @ BaseRx(theta) @ BaseRz(psi)
+
+# -----------------------------
+# 2) yaw, pitch, roll (CoppeliaSim convention): 
+#    https://manual.coppeliarobotics.com/en/positionOrientationTransformation.htm
+
+def R_rpy_CoppeliaSim(alpha, beta, gamma):
+    return BaseRx(alpha) @ BaseRy(beta) @ BaseRz(gamma)
+
+
+phi_deg, theta_deg, psi_deg = 20, 30, 60          # for Euler angles System I
+alpha_deg, beta_deg, gamma_deg = 28.5, 9.8, 77.5          # for yaw, pitch, roll CoppeliaSim
+
+phi, theta, psi = np.deg2rad([phi_deg, theta_deg, psi_deg])
+alpha, beta, gamma = np.deg2rad([alpha_deg, beta_deg, gamma_deg])
+
+R1 = R_euler_SystemI(phi, theta, psi)
+R2 = R_rpy_CoppeliaSim(alpha, beta, gamma)
+
+np.set_printoptions(precision=4, suppress=True)
+print("Rotation matrix (Euler angles System I):\n", R1)
+print("\nRotation matrix (yaw, pitch, roll CoppeliaSim):\n", R2)
+```
