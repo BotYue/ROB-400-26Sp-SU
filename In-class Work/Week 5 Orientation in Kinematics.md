@@ -28,7 +28,7 @@
 ## 2. Rotate a Framein CoppeliaSim
 
 Next, we will perform Euler-angle rotation to this reference frame. 
-<br>Specifically, we will perform System I Euler-angle rotation (or called z-x′-z″)
+<br>Specifically, we will perform **System I Euler-angle rotation (or called z-x′-z″)**
 <br>We are about to rotate in this sequence: 
 * 20 deg about the OZ axis (or called z axis)
 * 30 deg about the rotated OU axis (or called x' axis)
@@ -45,7 +45,7 @@ Next, we will perform Euler-angle rotation to this reference frame.
 
 <img src="Pic/euler_3.png" width="650"/>
 
-- [ ] The reading of `α: +28.xxx deg; β: +9.xxx deg; γ: +77.xxx deg` is another represtation convention of Euler Angle. It is based on "roll, pitch and yaw" (RPY) and set as a different sequence as the common one in our slides. What CoppeliaSim used in actually "yaw, pitch, roll" sequence.
+- [ ] The reading of `α: +28.xxx deg; β: +9.xxx deg; γ: +77.xxx deg` is another represtation convention of Euler Angle. It is based on **roll, pitch and yaw" (RPY)**, but in a different sequence as the common one in our slides. <br>What CoppeliaSim used in actually **"yaw, pitch, roll"** sequence.
 - [ ] You can find detailed reference on their manual https://manual.coppeliarobotics.com/en/positionOrientationTransformation.htm
   
 <img src="Pic/euler_4.png" width="650"/>
@@ -59,7 +59,7 @@ We would like to verify whether the following two representations describe the s
 * The rotation we applied using **System I Euler angles (z–x′–z″)**:
   ( 20 deg → 30 deg → 60 deg )
 
-* The orientation reported by **CoppeliaSim** in **yaw–pitch–roll** format:
+* The orientation reported by CoppeliaSim in **yaw, pitch, roll** format:
   ( α = +28.xxx deg,; β = +9.xxx deg,; γ = +77.xxx deg )
 
 
