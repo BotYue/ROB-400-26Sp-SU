@@ -41,8 +41,13 @@ Next, we will perform Euler-angle rotation to this reference frame.
 
 - [ ] Secondly, set "Around X [deg]" as 30, click "X-rotate sel.". You should can the frame rotates again.
 - [ ] Thirdly, set "Around Z [deg]" as 60, click "Z-rotate sel.". You should can the frame rotates again.
-- [ ] At the end, you should get such looking, and also get a reading of `a: +28.xxx  b=+9.xxx g=+77.xxx" on screen
+- [ ] At the end, you should get such looking, and also get a reading of `a: +28.xxx  b=+9.xxx g=+77.xxx` on screen
 
 <img src="Pic/euler_3.png" width="650"/>
+
+- [] The reading of `a: +28.xxx  b=+9.xxx g=+77.xxx` is another represtation convention of Euler Angle. It is based on "roll, pitch and yaw" (RPY) and set as a different sequence as the common one in our slides. What CoppeliaSim used in actually "yaw, pitch, roll" sequence.
+- [] You can find detailed reference on their manual https://manual.coppeliarobotics.com/en/positionOrientationTransformation.htm
+  
+<img src="Pic/euler_4.png" width="650"/>
 
 ---
