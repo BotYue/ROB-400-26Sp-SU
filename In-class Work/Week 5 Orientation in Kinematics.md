@@ -6,7 +6,7 @@
 
 
 ------------------
-## 1. Visualize a Framein CoppeliaSim
+## 1. Visualize a Frame in CoppeliaSim
 
 - [ ] Open a new scene in CoppeliaSim
 
@@ -25,7 +25,7 @@
 
 
 ------------------
-## 2. Rotate a Framein CoppeliaSim
+## 2. Rotate a Frame in CoppeliaSim
 
 Next, we will perform Euler-angle rotation to this reference frame. 
 <br>Specifically, we will perform **System I Euler-angle rotation (or called z-x′-z″)**
@@ -62,4 +62,4 @@ We would like to verify whether the following two representations describe the s
 * The orientation reported by CoppeliaSim in **yaw, pitch, roll** format:
   ( α = +28.xxx deg,; β = +9.xxx deg,; γ = +77.xxx deg )
 
-
+* Read ana complete the Python code
