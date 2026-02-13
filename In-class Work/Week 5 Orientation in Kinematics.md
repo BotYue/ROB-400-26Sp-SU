@@ -37,7 +37,12 @@ Next, we will perform Euler-angle rotation to this reference frame.
 - [ ] Go to "Object Rotation", In "Rotation", firstly set to "Relative to own frame"
 - [ ] Firsly, set "Around Z [deg]" as 20, click "Z-rotate sel.". You should can the frame rotates following the right-hand rule.
 
-
 <img src="Pic/euler_2.png" width="650"/>
+
+- [ ] Secondly, set "Around X [deg]" as 30, click "X-rotate sel.". You should can the frame rotates again.
+- [ ] Thirdly, set "Around Z [deg]" as 60, click "Z-rotate sel.". You should can the frame rotates again.
+- [ ] At the end, you should get such looking, and also get a reading of `a: +28.xxx  b=+9.xxx g=+77.xxx" on screen
+
+<img src="Pic/euler_3.png" width="650"/>
 
 ---
