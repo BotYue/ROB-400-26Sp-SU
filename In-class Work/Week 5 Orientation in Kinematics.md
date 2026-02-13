@@ -103,11 +103,11 @@ def R_euler_SystemI(phi, theta, psi):
 #    https://manual.coppeliarobotics.com/en/positionOrientationTransformation.htm
 
 def R_rpy_CoppeliaSim(alpha, beta, gamma):
-    return BaseRx(alpha) @ BaseRy(beta) @ BaseRz(gamma)
+    return ???
 
 
 phi_deg, theta_deg, psi_deg = 20, 30, 60          # for Euler angles System I
-alpha_deg, beta_deg, gamma_deg = 28.5, 9.8, 77.5          # for yaw, pitch, roll CoppeliaSim
+alpha_deg, beta_deg, gamma_deg = ???          # for yaw, pitch, roll CoppeliaSim
 
 phi, theta, psi = np.deg2rad([phi_deg, theta_deg, psi_deg])
 alpha, beta, gamma = np.deg2rad([alpha_deg, beta_deg, gamma_deg])
@@ -119,3 +119,16 @@ np.set_printoptions(precision=4, suppress=True)
 print("Rotation matrix (Euler angles System I):\n", R1)
 print("\nRotation matrix (yaw, pitch, roll CoppeliaSim):\n", R2)
 ```
+
+### :page_facing_up: Task to complete:
+- [ ] Finish the Python code. Make sure it can correctly report 2 rotation matrices that are the same based on our  ( 20 deg → 30 deg → 60 deg ) rotation.
+<br> Check with the intructor if you want.
+- [ ] Use the given rotating angles in the worksheet. Do:
+
+  * **Simulation**
+Peform the rotation in the Worksheet.
+<br> Report `α: ?? deg; β: ?? deg; γ: ?? deg` on screen
+
+  * **Python verification**
+Report the rotation matrix given in Python.
+<br> Make sure 2 rotation matrices are the same
