@@ -35,6 +35,9 @@ Next, we will perform Euler-angle rotation to this reference frame.
 * 60 deg about the rotated OW axis (or called z'' axis)
 
 - [ ] Go to "Object Rotation", In "Rotation", firstly set to "Relative to own frame"
+- [ ] Firsly, set "Around Z [deg]" as 20, click "Z-rotate sel.". You should can the frame rotates following the right-hand rule.
 
+
+<img src="Pic/euler_2.png" width="650"/>
 
 ---
