@@ -52,6 +52,14 @@ $$
 \end{aligned}
 $$
 
+Focus on the last 2 equations and plug in constant:
+$$
+\begin{aligned}
+0.5\cos\theta_1 + \cos(\theta_1+\theta_2)  = 0.8404 \\
+0.5\sin\theta_1 + \sin(\theta_1+\theta_2)  = 0.2144
+\end{aligned}
+$$
+
 ------------------
 ## 2. Optimization-Based Inverse Kinematics
 
