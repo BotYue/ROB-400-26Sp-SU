@@ -70,6 +70,13 @@ $$
 \end{aligned}
 $$
 
+This is 
+
+$$
+\begin{aligned}
+\cos\theta_2 = -0.4977
+\end{aligned}
+$$
 
 
 ------------------
