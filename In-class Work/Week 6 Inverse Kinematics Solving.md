@@ -100,8 +100,8 @@ $$
 - [ ] Use ``Asset/week6_IK_worksheet.ttt``. The desired pose is given in the Worksheet.
 - [ ] Use Python to compute a set of velocities; then use the same set of velocities in lua to run the CoppeliaSim simulation.
 - [ ] Report in Worksheet
-1. First 3 updates of vecloties ($\dot q=\dot\theta_1, \dot\theta_2, \dot\theta_3$)
-2. Final 3 updates of velocities ($\dot q=\dot\theta_1, \dot\theta_2, \dot\theta_3$)
+1. First 3 updates of vecloties $\dot q=(\dot\theta_1, \dot\theta_2, \dot\theta_3)$
+2. Final 3 updates of velocities $\dot q=(\dot\theta_1, \dot\theta_2, \dot\theta_3)$
 3. Final $(x, y, z, \alpha, \beta, \gamma)$ pose displayed in CoppeliaSim
 
 Feel free to ask the instructor for questions.
