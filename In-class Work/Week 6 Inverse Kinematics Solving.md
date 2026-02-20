@@ -98,4 +98,6 @@ $$
 - [ ] Report in Worksheet
 1. First 3 updates of vecloties ($\dot\theta_1, \dot\theta_2, \dot\theta_3$)
 2. Final 3 updates of velocities ($\dot\theta_1, \dot\theta_2, \dot\theta_3$)
-3. Final $x, y, z, \alpha, \beta, \gamma$ pose displayed in CoppeliaSim
+3. Final $(x, y, z, \alpha, \beta, \gamma)$ pose displayed in CoppeliaSim
+
+Feel free to ask the instructor for questions.
