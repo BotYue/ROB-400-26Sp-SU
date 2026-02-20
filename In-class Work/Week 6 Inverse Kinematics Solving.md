@@ -89,5 +89,13 @@ $$
 - [ ] Firstly, use ``jacobian_ik_3.py`` and ``Asset/week6_IK_lecture.ttt`` scene file.
 - [ ] Play with these 2 files to understand the workflow
 - [ ] For example, you can use a different desired pose set in Python, <br>such as `target = np.array([2, 0.8, 0.0, 0.0, 0.0, np.deg2rad(20.0)])`
-- [ ] Run the python, you will get a set of velocities; then specific the same set of velocities in lua to run the CoppeliaSim simulation.
+- [ ] Run the python, you will get a set of velocities; then set the same set of velocities in lua to run the CoppeliaSim simulation.
+- [ ] Once you are familiar with it, we will switch to ``Asset/week6_IK_worksheet.ttt``.<br> The Python code still works for it, you just need to change the length specification `L = {1: 0.8, 2: 1.0, 3: 1.0}`.
 
+### :page_facing_up: Task 2 to complete:
+- [ ] Use ``Asset/week6_IK_worksheet.ttt``. The desired pose is given in the Worksheet.
+- [ ] Use Python to compute a set of velocities; then use the same set of velocities in lua to run the CoppeliaSim simulation.
+- [ ] Report in Worksheet
+1. First 3 updates of vecloties ($\dot\theta_1, \dot\theta_2, \dot\theta_3$)
+2. Final 3 updates of velocities ($\dot\theta_1, \dot\theta_2, \dot\theta_3$)
+3. Final $x, y, z, \alpha, \beta, \gamma$ pose displayed in CoppeliaSim
