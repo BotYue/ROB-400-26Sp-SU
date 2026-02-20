@@ -86,5 +86,8 @@ $$
 ------------------
 ## 2. Optimization-Based Inverse Kinematics
 
-
+- [ ] Firstly, use ``jacobian_ik_3.py`` and ``Asset/week6_IK_lecture.ttt`` scene file.
+- [ ] Play with these 2 files to understand the workflow
+- [ ] For example, you can use a different desired pose set in Python, <br>such as `target = np.array([2, 0.8, 0.0, 0.0, 0.0, np.deg2rad(20.0)])`
+- [ ] Run the python, you will get a set of velocities; then specific the same set of velocities in lua to run the CoppeliaSim simulation.
 
