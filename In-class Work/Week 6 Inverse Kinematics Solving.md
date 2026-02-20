@@ -16,15 +16,12 @@
 
 <img src="Pic/week6_viewlength.png" width="600"/>
 
-- [ ] In this work, we want to solve such IK problem:
-* Desired Position: $(x, y, z) = (1.3, 0.6, 0)$
-* Desired Oretation: $(row, pitch, yaw)= (0, 0, 40 deg)$
-
 
 ## 1. Analytic Inverse Kinematics
 
-Firstly, let us using analytic IK to solve it.
-
+Firstly, let us using analytic IK to solve such IK problem:
+* Desired Position: $(x, y, z) = (1.3, 0.6, 0)$
+* Desired Oretation: $(row, pitch, yaw)= (0, 0, 40 deg)$
 
 $$
 {}^{0}_{3}T =
