@@ -90,7 +90,7 @@ $$
 - [ ] Play with these 2 files to understand the workflow
 - [ ] For example, you can use a different desired pose set in Python, <br>such as `target = np.array([2, 0.8, 0.0, 0.0, 0.0, np.deg2rad(20.0)])`
 - [ ] Run the python, you will get a set of velocities; then set the same set of velocities in lua to run the CoppeliaSim simulation.
-- [ ] Once you are familiar with it, we will switch to ``Asset/week6_IK_worksheet.ttt``.<br> The Python code still works for it, you just need to change the length specification `L = {1: 0.8, 2: 1.0, 3: 1.0}`.
+- [ ] Once you are familiar with it, we will switch to ``Asset/week6_IK_worksheet.ttt``.<br> The Python code still works for it, you just need to update the length in lecture `L = {1: 0.8, 2: 1.0, 3: 1.0}` to be actual length in worksheet.
 - [ ] Extra: If you want to obverse the slow motion in Simulation, you can click the "turtle" icon and then click "toggle real time mode"
       
 
