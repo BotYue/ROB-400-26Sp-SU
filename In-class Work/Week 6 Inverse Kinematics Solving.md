@@ -42,6 +42,16 @@ S_{123} & \ \ C_{123} & 0 & 0.5S_1 + S_{12} + 0.6S_{123} \\
 \end{bmatrix}
 $$
 
+We have 3 equations to solve:
+
+$$
+\begin{aligned}
+\theta_1 + \theta_2 + \theta_3 =40^\circ \\
+0.5\cos\theta_1 + \cos(\theta_1+\theta_2) + 0.6\cos(\theta_1+\theta_2+\theta_3) = 1.3 \\
+0.5\sin\theta_1 + \sin(\theta_1+\theta_2) + 0.6\sin(\theta_1+\theta_2+\theta_3) = 0.6
+\end{aligned}
+$$
+
 ------------------
 ## 2. Optimization-Based Inverse Kinematics
 
