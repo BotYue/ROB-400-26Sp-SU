@@ -53,12 +53,24 @@ $$
 $$
 
 Focus on the last 2 equations and plug in constant:
+
 $$
 \begin{aligned}
 0.5\cos\theta_1 + \cos(\theta_1+\theta_2)  = 0.8404 \\
 0.5\sin\theta_1 + \sin(\theta_1+\theta_2)  = 0.2144
 \end{aligned}
 $$
+
+Perform square to both sides; and then add these 2 equations
+
+$$
+\begin{aligned}
+0.5^2 + 1^2 +2\cdot 0.5\cdot 1 \cos\theta_2 = 0.8404^2 + 0.2144^2\\
+1.25+ \cos\theta_2 = 0.7523
+\end{aligned}
+$$
+
+
 
 ------------------
 ## 2. Optimization-Based Inverse Kinematics
