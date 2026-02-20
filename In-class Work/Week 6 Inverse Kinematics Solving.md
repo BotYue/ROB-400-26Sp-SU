@@ -82,7 +82,7 @@ $$
 - [ ] Continue the calculation, obtain the values for $\theta_1, \theta_2, \theta_3$. You should get 2 sets of values
 - [ ] You can ask AI tools if feel difficulty in trigonometry
 - [ ] Enter two sets of values to your scene and verify.
-- [ ] Report 
+- [ ] Report in Worksheet
 1. Set 1 values for $(\theta_1, \theta_2, \theta_3)$; corresponding $(x, y, z; \alpha, \beta, \gamma)$ displayed in simulator
 2. Set 2 values for $(\theta_1, \theta_2, \theta_3)$; corresponding $(x, y, z; \alpha, \beta, \gamma)$ displayed in simulator
 
