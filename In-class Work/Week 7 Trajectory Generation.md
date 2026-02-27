@@ -50,5 +50,37 @@ plt.show()
 
 - [ ] Open the given scene file in "Asset -> week7_in_class.ttt"
 
+- [ ] One core function in the lua code is:
+
+```lua
+sim.moveToPose({
+        pose = sim.getObjectPose(auxData.tip, sim.handle_world),
+        targetPose = targetPose,
+        maxVel = maxVel,
+        maxAccel = maxAccel,
+        maxJerk = maxJerk,
+        callback = moveToPoseCallback,
+        auxData = auxData
+    })
+```
+This function performs trajectory generation using Ruckig library.
+<br> https://manual.coppeliarobotics.com/en/sim/simMoveToPose.htm
+
+- [ ] The traj generation paramaeters that your can tune are the main function `sysCall_thread()`
+
+```lua
+-- Motion limits (vx,vy,vz, vRot):
+    local maxVel   = {0.45, 0.45, 0.45, 4.5}
+    local maxAccel = {0.13, 0.13, 0.13, 1.24}
+    local maxJerk  = {0.1,  0.1,  0.1,  0.2}
+```
+
+For example, you can make them 10x larger or 10x smaller, and observe the simulated movement.
+
+### :page_facing_up: Task 2 to complete:
+- [ ] Play with the traj generation paramaeters. Observe the differences.
+- [ ] Use Ruckig Library to generate trajectory.
+- [ ] No need to report in Worksheet
+- [ ] Show a Simulation with different parameter settings to the intructor to get checked.
 
 Feel free to ask the instructor for questions.
