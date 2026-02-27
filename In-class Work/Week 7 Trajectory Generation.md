@@ -73,7 +73,7 @@ sim.moveToPose({
 This function performs trajectory generation using Ruckig library.
 <br> https://manual.coppeliarobotics.com/en/sim/simMoveToPose.htm
 
-- [ ] The traj generation paramaeters that your can tune are the main function `sysCall_thread()`
+- [ ] The traj generation paramaeters that your can tune are located inside the main function `sysCall_thread()`
 
 ```lua
 -- Motion limits (vx,vy,vz, vRot):
