@@ -8,7 +8,33 @@
 ------------------
 ## 1. Ruckig Library
 
-- [ ] Download the  provided ``Asset/week6_IK_worksheet.ttt`` scene file.
+- [ ] Install the Ruckig Library (Python). https://github.com/pantor/ruckig
+      <br> You can directly use Google Colab to work with it
 
+<img src="Pic/week7 colab_ruckig.png" width="600"/>
 
+- [ ] After installation, run the provided Sample code to do trajectory generation for 3 DoF end-effector (assume only x,y,z position).
+<br> The Sample code is provided in "Asset -> week7_traj_gen.py"
+
+You can add extra piece to visulize it. For example, position:
+
+```python
+plt.figure()
+plt.plot(time_data, pos_data[:,0], label='DOF 1')
+plt.plot(time_data, pos_data[:,1], label='DOF 2')
+plt.plot(time_data, pos_data[:,2], label='DOF 3')
+plt.title("Position vs Time")
+plt.xlabel("Time (s)")
+plt.ylabel("Position")
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+
+- [ ] Try to visulize 3 items related with trajectory in 3 Figures: 
+* Position.
+* Velocity.
+* Acceleration
+
+  
 Feel free to ask the instructor for questions.
