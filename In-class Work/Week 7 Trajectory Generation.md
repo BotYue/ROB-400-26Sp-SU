@@ -47,7 +47,7 @@ Example of a velocity figure:
 1. Sketch the Position vs Time figure
 2. Sketch the Velocity vs Time figure
 3. Sketch the Acceleration vs Time figure
-
+<br>(you can use different solid/dashed/dot line styles to distingush different DoF)
 
 ------------------
 ## 2. Trajectory Generation in CoppeliaSim
