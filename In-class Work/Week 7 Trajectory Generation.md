@@ -36,6 +36,10 @@ plt.show()
 * Velocity.
 * Acceleration
 
+Example of a velocity figure:
+
+<img src="Pic/week7 sample_plot.png" width="450"/>
+
 ### :page_facing_up: Task 1 to complete:
 - [ ] Use the given traj generation settings in the Worksheet.
 - [ ] Use Ruckig Library to generate trajectory.
@@ -48,7 +52,10 @@ plt.show()
 ------------------
 ## 2. Trajectory Generation in CoppeliaSim
 
-- [ ] Open the given scene file in "Asset -> week7_in_class.ttt"
+- [ ] Open the given scene file in "Asset -> week7_in_class.ttt". Run it to see what is going on.
+
+
+<img src="Pic/week7 UR_simulation.png" width="450"/>
 
 - [ ] One core function in the lua code is:
 
