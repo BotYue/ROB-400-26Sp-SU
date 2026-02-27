@@ -6,7 +6,7 @@
 
 
 ------------------
-## 1. Ruckig Library
+## 1. Ruckig Library for Trajectory Generation
 
 - [ ] Install the Ruckig Library (Python). https://github.com/pantor/ruckig
       <br> You can directly use Google Colab to work with it
@@ -36,5 +36,19 @@ plt.show()
 * Velocity.
 * Acceleration
 
-  
+### :page_facing_up: Task 1 to complete:
+- [ ] Use the given traj generation settings in the Worksheet.
+- [ ] Use Ruckig Library to generate trajectory.
+- [ ] Report in Worksheet
+1. Sketch the Position vs Time figure
+2. Sketch the Velocity vs Time figure
+3. Sketch the Acceleration vs Time figure
+
+
+------------------
+## 2. Trajectory Generation in CoppeliaSim
+
+- [ ] Open the given scene file in "Asset -> week7_in_class.ttt"
+
+
 Feel free to ask the instructor for questions.
