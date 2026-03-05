@@ -49,3 +49,13 @@ Remove the USB cable from your MotorsBus and press Enter when done.
  	* if you prefer VSCode, make sure you choose the correct Python kernel within th IDE.
 
 <img src="Pic/anaconda_lerobot.png" width="700"/>
+
+- [ ] First, check the basic Python package with this code:
+
+```python
+import lerobot
+import pkgutil
+
+print("LeRobot modules:")
+print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
+```
