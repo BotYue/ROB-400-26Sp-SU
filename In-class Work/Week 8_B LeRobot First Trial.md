@@ -59,3 +59,38 @@ import pkgutil
 print("LeRobot modules:")
 print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
 ```
+
+- [ ] Leader Test. Connect Leader with you computer via USB. Try this code.
+<br> You should modify the PORT = r"\\.\..." based on your own computer.
+
+```python
+import time
+from pprint import pprint
+
+from lerobot.teleoperators.omx_leader.config_omx_leader import OmxLeaderConfig
+from lerobot.teleoperators.omx_leader.omx_leader import OmxLeader
+
+PORT = r"\\.\COM14"
+
+cfg = OmxLeaderConfig(port=PORT, id="omx_leader_arm")
+leader = OmxLeader(cfg)
+
+leader.connect()
+print("Leader connected on", PORT)
+
+# Show what LeRobot thinks the leader outputs
+print("action_features =", getattr(leader, "action_features", None))
+print("\nPrinting leader.get_action()... Move the leader arm. Ctrl+C to stop.\n")
+
+try:
+    while True:
+        a = leader.get_action()   
+        print("keys:", list(a.keys()))
+        pprint(a)
+        time.sleep(0.1)
+except KeyboardInterrupt:
+    print("\nStopping...")
+finally:
+    leader.disconnect()
+    print("Disconnected.")
+```
