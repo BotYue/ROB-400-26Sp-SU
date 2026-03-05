@@ -43,7 +43,9 @@ Remove the USB cable from your MotorsBus and press Enter when done.
 
 - [ ] After checking communication to the robot, we will now verify if Python can connect to the robot..
 
-- [ ] Make sure the Python  you are using comes from the virtual environment you just created.
+- [ ] Make sure the Python  you are using comes from the virtual environment you just created. For example,
 
+ 	* if you prefer Anaconda, select the enviroment in Anaconda Navigator and then lanuch a Spyder Python IDE;
+ 	* if you prefer VSCode, make sure you choose the correct Python kernel within th IDE.
 
 <img src="Pic/anaconda_lerobot.png" width="700"/>
