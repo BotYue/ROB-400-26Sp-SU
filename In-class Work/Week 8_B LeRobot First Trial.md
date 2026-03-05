@@ -98,6 +98,13 @@ finally:
 
 ## Follower Test
 
+!!!Must place your follow in a large table in case falling down!
+
+If you get error message `[RxPacketError] The data value exceeds the limit value!`, just the value `- 15` to other.
+
+`- 15` means one direction by 15 degrees. for example change to `+ 15`
+
+
 ```python
 import time
 from lerobot.robots.omx_follower.config_omx_follower import OmxFollowerConfig
