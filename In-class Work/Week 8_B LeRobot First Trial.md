@@ -104,6 +104,7 @@ If you get error message `[RxPacketError] The data value exceeds the limit value
 
 `- 15` means one direction by 15 degrees. for example change to `+ 15`
 
+Note, the default header of bekler 36 W wont't fit, you should add an extra converter to the smps board.
 
 ```python
 import time
