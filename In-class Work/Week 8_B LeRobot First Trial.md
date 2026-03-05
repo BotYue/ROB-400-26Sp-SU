@@ -87,10 +87,50 @@ try:
         a = leader.get_action()   
         print("keys:", list(a.keys()))
         pprint(a)
-        time.sleep(0.1)
+        time.sleep(1.0)
 except KeyboardInterrupt:
     print("\nStopping...")
 finally:
     leader.disconnect()
+    print("Disconnected.")
+```
+
+
+## Follower Test
+
+```python
+import time
+from lerobot.robots.omx_follower.config_omx_follower import OmxFollowerConfig
+from lerobot.robots.omx_follower.omx_follower import OmxFollower
+
+PORT = "COM12"
+
+follower = OmxFollower(OmxFollowerConfig(port=PORT, id="omx_follower_arm"))
+follower.connect()
+print("Connected.")
+
+# pick the first motor key (you can change which one)
+k = list(follower.bus.motors.keys())[0]
+print("Testing motor key:", k)
+
+# read current position (raw ticks)
+p0 = follower.bus.read("Present_Position", k)
+print("Present_Position =", p0)
+
+# enable torque (method name varies by branch)
+if hasattr(follower.bus, "enable_torque"):
+    follower.bus.enable_torque(k)
+
+# command a small move (+100 ticks) then come back
+try:
+    follower.bus.write("Goal_Position", k, p0 - 15)
+    time.sleep(3.0)
+    follower.bus.write("Goal_Position", k, p0)
+    time.sleep(3.0)
+finally:
+    # optional: disable torque
+    if hasattr(follower.bus, "disable_torque"):
+        follower.bus.disable_torque(k)
+    follower.disconnect()
     print("Disconnected.")
 ```
