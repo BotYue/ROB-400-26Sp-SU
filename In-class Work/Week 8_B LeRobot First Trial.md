@@ -13,6 +13,7 @@
 
 	* In Anaconda, you can open "Anaconda Prompt" for command-line based installation.
 
+<img src="Pic/conda_promtp.png" width="450"/>
 
 ## 2. Verify Installation 
 
@@ -44,3 +45,5 @@ Remove the USB cable from your MotorsBus and press Enter when done.
 
 - [ ] Make sure the Python  you are using comes from the virtual environment you just created.
 
+
+<img src="Pic/anaconda_lerobot.png" width="700"/>
