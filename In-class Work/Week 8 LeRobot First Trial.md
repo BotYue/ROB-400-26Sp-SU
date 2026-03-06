@@ -217,6 +217,10 @@ finally:
 - [ ] Use this command-line in Terminal (either multiple-line or single-line, not sure which will work for your Terminal)
 <br> Adjust the Ports to be the ones on your own computer.
 
+> [!CAUTION]
+> Get ready for the sudden move of the Follower robot.
+
+
 - [ ] Multiple-line:
 ```shell
 lerobot-teleoperate 
