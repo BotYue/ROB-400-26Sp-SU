@@ -150,20 +150,19 @@ keys: ['shoulder_pan.pos', 'shoulder_lift.pos', 'elbow_flex.pos', 'wrist_flex.po
 
 ## 5. Verify Follower
 
-
 > [!CAUTION]
 > Must place even fix your Follower on a large, safe surface without collision.
 > 
 > The Follower may move suddenly or unexpectedly. It will hit nearby objects or even fall off the table.
 
 
-!!!Must place your follow in a large table in case falling down!
+- [ ] Connect Follower with you computer via USB. And make sure it is properly powered.
+<br> Try this code.
+<br> You should modify the `PORT = ... ` based on your own computer.
 
-If you get error message `[RxPacketError] The data value exceeds the limit value!`, just the value `- 15` to other.
-
-`- 15` means one direction by 15 degrees. for example change to `+ 15`
-
-Note, the default header of bekler 36 W wont't fit, you should add an extra converter to the smps board.
+- [ ] You can change `list(follower.bus.motors.keys())[0]` to others such as `list(follower.bus.motors.keys())[1]` to control a different motor. `[0]` is for the motor on base.
+- [ ] If you get error message `[RxPacketError] The data value exceeds the limit value!`, just the value `- 15` to other.
+<br> `- 15` means one direction by 15 degrees. for example change to `+ 15`
 
 ```python
 import time
@@ -180,7 +179,7 @@ print("Connected.")
 k = list(follower.bus.motors.keys())[0]
 print("Testing motor key:", k)
 
-# read current position (raw ticks)
+# read current position 
 p0 = follower.bus.read("Present_Position", k)
 print("Present_Position =", p0)
 
@@ -188,7 +187,7 @@ print("Present_Position =", p0)
 if hasattr(follower.bus, "enable_torque"):
     follower.bus.enable_torque(k)
 
-# command a small move (+100 ticks) then come back
+# command a small move then come back
 try:
     follower.bus.write("Goal_Position", k, p0 - 15)
     time.sleep(3.0)
