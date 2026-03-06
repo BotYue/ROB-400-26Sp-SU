@@ -23,7 +23,15 @@
 
 <img src="Pic/conda_promtp.png" width="450"/>
 
-## 2. Verify Basic Installation 
+
+## 2. Robot Connection
+
+- [ ] The OpenRB Arduino board has a power source jumper. It must be set differently for Leader and Follower
+      
+- [ ] 
+- [ ] Leader Test. You don't need extra power supply to the Leader. The Leader will be powered directly from your computer USB.
+
+## 3. Verify Basic Installation 
 
 - [ ] Use a USB cable to connect the robot to your computer. We will check with basic communication with lerobot.
 
@@ -66,10 +74,12 @@ print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
 ```
 
 
-## 3. Verify Leader
+## 4. Verify Leader
 
-- [ ] Leader Test. Connect Leader with you computer via USB. Try this code.
-<br> You should modify the PORT = r"\\.\..." based on your own computer.
+- [ ] Leader Test. You don't need extra power supply to the Leader. The Leader will be powered directly from your computer USB.
+- [ ] Make sure the 
+- [ ] Connect Leader with you computer via USB. Try this code.
+<br> You should modify the `PORT = ... ` based on your own computer.
 
 ```python
 import time
@@ -78,7 +88,7 @@ from pprint import pprint
 from lerobot.teleoperators.omx_leader.config_omx_leader import OmxLeaderConfig
 from lerobot.teleoperators.omx_leader.omx_leader import OmxLeader
 
-PORT = r"\\.\COM14"
+PORT = "COM14"
 
 cfg = OmxLeaderConfig(port=PORT, id="omx_leader_arm")
 leader = OmxLeader(cfg)
@@ -103,7 +113,7 @@ finally:
     print("Disconnected.")
 ```
 
-## 4. Verify Follower
+## 5. Verify Follower
 
 !!!Must place your follow in a large table in case falling down!
 
