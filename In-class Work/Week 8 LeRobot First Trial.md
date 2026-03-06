@@ -200,3 +200,10 @@ finally:
     follower.disconnect()
     print("Disconnected.")
 ```
+
+
+## 6. Fully Integrated Imitation Run
+
+- [ ] You can use the Follower to imitate the movement of the Leader.
+- [ ] Connect both Leader and Follower to the same machine.
+- [ ] 
