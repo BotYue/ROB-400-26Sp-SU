@@ -27,7 +27,16 @@
 ## 2. Robot Connection
 
 - [ ] The OpenRB Arduino board has a power source jumper. It must be set differently for Leader and Follower
-      
+  
+	* If Leader: the VIN(DXL) pin should be left in the air. The cap covers the other 2 pins.
+
+	* If Follower: the +5V pin should be left in the air. The cap covers the other 2 pins.
+
+
+||
+|---------------------|
+| <img src="Pic/openrb_jumper.png" width="250"> | 
+
 - [ ] 
 - [ ] Leader Test. You don't need extra power supply to the Leader. The Leader will be powered directly from your computer USB.
 
