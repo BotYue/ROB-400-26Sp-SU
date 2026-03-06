@@ -10,9 +10,9 @@
 
 :large_blue_diamond: Each student should attempt the installation.
 
-:large_orange_diamond: To get Worksheet checked, your Leader+Follower group should have half of machines working for the demo. 
+:large_orange_diamond: To get Worksheet checked, your Leader+Follower group should have at least 2 machines working for the "Task 4" and "Task 5" demo. 
 
-:large_orange_diamond: Students arrive very late in class must finish installation to get full credit in Worksheet.
+:large_orange_diamond: Students arriving very late in class must finish installation to get credit in Worksheet.
 
 :fuelpump: An individual student demos "Task 6: Fully Integrated Teleoperation" on their own machine independently by March 27: 2 extra points toward final course grade
 
@@ -234,6 +234,7 @@ lerobot-teleoperate --robot.type=omx_follower --robot.port=COM12 --robot.id=omx_
 ```
 
 Here is my example running:
-<img src="Pic/lerobot_tele.jpg" width="600">
+
+<img src="Pic/lerobot_tele.png" width="600">
 
 I suggest you start reading online resource on LeRobot for better figuring out it.
