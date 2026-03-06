@@ -80,7 +80,7 @@ You should see a port listed. To verify that this port corresponds to the robot:
 Here is my example print-out in Terminal in a Windows machine..
 
 ```bash
-(lerobot) C:\Users\YC>(lerobot) C:\Users\Ramos>lerobot-find-port
+(lerobot) C:\Users\YC>(lerobot) C:\Users\YC>lerobot-find-port
 Finding all available ports for the MotorsBus.
 Ports before disconnecting: ['COM14']
 Remove the USB cable from your MotorsBus and press Enter when done.
@@ -190,7 +190,7 @@ print("Testing motor key:", k)
 p0 = follower.bus.read("Present_Position", k)
 print("Present_Position =", p0)
 
-# enable torque (method name varies by branch)
+# enable torque
 if hasattr(follower.bus, "enable_torque"):
     follower.bus.enable_torque(k)
 
@@ -237,4 +237,8 @@ Here is my example running:
 
 <img src="Pic/lerobot_tele.png" width="600">
 
-I suggest you start reading online resource on LeRobot for better figuring out it.
+----
+
+#### :wrench: *I suggest that you start reading online resources on LeRobot for better figuring it out.*
+
+#### :wrench: If you want to try the Leader/Follower after class, you can place the boxes in the storage room of 3-217 (third floor). 
