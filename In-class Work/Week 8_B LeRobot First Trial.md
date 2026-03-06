@@ -4,13 +4,13 @@
 #### :dizzy: **Date :** March 6
 #### :ballot_box_with_check: Please work collaboratively within your team. Also be generous to help other teams when possible.
 
-:large_blue_diamond: Form s Leader+Follower paring group. The number of students in each Leader+Follower group should be: 6, 6, 5, 5.
+:large_blue_diamond: Form a Leader+Follower paring group. The number of students in each Leader+Follower group should be: 6, 6, 5, 5.
 
-:large_blue_diamond: Each student should attemp the installation.
+:large_blue_diamond: Each student should attempt the installation.
 
-:large_blue_diamond: To get Worksheet checked, your Leader+Follower group should have half of machines working for the demo. 
+:large_orange_diamond: To get Worksheet checked, your Leader+Follower group should have half of machines working for the demo. 
 
-:large_blue_diamond: Students arrive very late in class must finish installation to get full credit in Worksheet.
+:large_orange_diamond: Students arrive very late in class must finish installation to get full credit in Worksheet.
 
 ------------------
 ## 1. LeRobot Installation
@@ -23,7 +23,7 @@
 
 <img src="Pic/conda_promtp.png" width="450"/>
 
-## 2. Verify Installation 
+## 2. Verify Basic Installation 
 
 - [ ] Use a USB cable to connect the robot to your computer. We will check with basic communication with lerobot.
 
@@ -46,6 +46,25 @@ Finding all available ports for the MotorsBus.
 Ports before disconnecting: ['COM14']
 Remove the USB cable from your MotorsBus and press Enter when done.
 ```
+
+- [ ] After checking communication to the robot, we will now verify if Python can connect to the robot..
+      <br>Make sure the Python  you are using comes from the virtual environment you just created. For example,
+
+ 	* if you prefer Anaconda, select the enviroment in Anaconda Navigator and then lanuch a Spyder Python IDE;
+ 	* if you prefer VSCode, make sure you choose the correct Python kernel within th IDE.
+
+<img src="Pic/anaconda_lerobot.png" width="700"/>
+
+Check the basic Python package with this code:
+
+```python
+import lerobot
+import pkgutil
+
+print("LeRobot modules:")
+print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
+```
+
 
 ## 3. Verify Python Connection
 
@@ -104,7 +123,7 @@ finally:
 ```
 
 
-## Follower Test
+## 4. Follower Test
 
 !!!Must place your follow in a large table in case falling down!
 
