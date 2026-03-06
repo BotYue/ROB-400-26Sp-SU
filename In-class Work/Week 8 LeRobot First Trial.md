@@ -62,6 +62,8 @@
 |---------------------|
 | <img src="Pic/follower.jpg" width="600"> | 
 
+-----
+
 ## 3. Verify Basic Installation 
 
 - [ ] Use a USB cable to connect the robot to your computer. We will check with basic communication with lerobot.
@@ -104,6 +106,7 @@ print("LeRobot modules:")
 print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
 ```
 
+-------
 
 ## 4. Verify Leader
 
