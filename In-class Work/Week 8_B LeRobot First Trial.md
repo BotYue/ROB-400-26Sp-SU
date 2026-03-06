@@ -1,8 +1,16 @@
-# Week 8_B: LeRobot First Trial
+# Week 8: LeRobot First Trial
 
 ---------------
-#### :dizzy: **Date :** March 5
+#### :dizzy: **Date :** March 6
 #### :ballot_box_with_check: Please work collaboratively within your team. Also be generous to help other teams when possible.
+
+:large_blue_diamond: Form s Leader+Follower paring group. The number of students in each Leader+Follower group should be: 6, 6, 5, 5.
+
+:large_blue_diamond: Each student should attemp the installation.
+
+:large_blue_diamond: To get Worksheet checked, your Leader+Follower group should have half of machines working for the demo. 
+
+:large_blue_diamond: Students arrive very late in class must finish installation to get full credit in Worksheet.
 
 ------------------
 ## 1. LeRobot Installation
