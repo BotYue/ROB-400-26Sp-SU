@@ -66,26 +66,7 @@ print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
 ```
 
 
-## 3. Verify Python Connection
-
-- [ ] After checking communication to the robot, we will now verify if Python can connect to the robot..
-
-- [ ] Make sure the Python  you are using comes from the virtual environment you just created. For example,
-
- 	* if you prefer Anaconda, select the enviroment in Anaconda Navigator and then lanuch a Spyder Python IDE;
- 	* if you prefer VSCode, make sure you choose the correct Python kernel within th IDE.
-
-<img src="Pic/anaconda_lerobot.png" width="700"/>
-
-- [ ] First, check the basic Python package with this code:
-
-```python
-import lerobot
-import pkgutil
-
-print("LeRobot modules:")
-print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
-```
+## 3. Verify Leader
 
 - [ ] Leader Test. Connect Leader with you computer via USB. Try this code.
 <br> You should modify the PORT = r"\\.\..." based on your own computer.
@@ -122,8 +103,7 @@ finally:
     print("Disconnected.")
 ```
 
-
-## 4. Follower Test
+## 4. Verify Follower
 
 !!!Must place your follow in a large table in case falling down!
 
