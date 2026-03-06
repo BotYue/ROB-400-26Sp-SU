@@ -150,6 +150,13 @@ keys: ['shoulder_pan.pos', 'shoulder_lift.pos', 'elbow_flex.pos', 'wrist_flex.po
 
 ## 5. Verify Follower
 
+
+> [!CAUTION]
+> Must place even fix your Follower on a large, safe surface without collision.
+> 
+> The Follower may move suddenly or unexpectedly. It will hit nearby objects or even fall off the table.
+
+
 !!!Must place your follow in a large table in case falling down!
 
 If you get error message `[RxPacketError] The data value exceeds the limit value!`, just the value `- 15` to other.
