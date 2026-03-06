@@ -202,9 +202,9 @@ finally:
 ```
 
 
-## 6. Fully Integrated Teleopration 
+## 6. Fully Integrated Teleoperation
 
-- [ ] You can use the Follower to imitate the movement of the Leader.
+- [ ] You can teleoperate the movement of the Leader to the Follower.
       https://huggingface.co/docs/lerobot/en/il_robots
 - [ ] Connect both Leader and Follower to the same machine.
 - [ ] Use this command-line in Terminal (either multiple-line or single-line, not sure which will work for your Terminal)
