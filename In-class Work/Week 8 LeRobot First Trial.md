@@ -27,6 +27,7 @@
 ## 2. Robot Connection
 
 - [ ] The OpenRB Arduino board has a power source jumper. It must be set differently for Leader and Follower
+      <br>https://emanual.robotis.com/docs/en/parts/controller/openrb-150/
   
 	* If Leader: the VIN(DXL) pin should be left in the air. The cap covers the other 2 pins.
 
@@ -37,8 +38,22 @@
 |---------------------|
 | <img src="Pic/openrb_jumper.png" width="250"> | 
 
-- [ ] 
-- [ ] Leader Test. You don't need extra power supply to the Leader. The Leader will be powered directly from your computer USB.
+- [ ] Leader doesn't need extra power supply. It is directly powered by your computer USB.
+
+|Leader |
+|---------------------|
+| <img src="Pic/leader.jpg" width="600"> | 
+
+
+- [ ] Follower needs a extra power supply. Use the Belker 36W power supply.
+<br> Use the key  (provided in the Belker box) to turn it into 12 V.
+<br> You need to connect it to an extra socket converter (provided in the Belker box).
+<br> Then connect the power supply to the SMPS2Dynamixel board.
+<br> See this picture.
+
+|Follower |
+|---------------------|
+| <img src="Pic/follower.jpg" width="600"> | 
 
 ## 3. Verify Basic Installation 
 
