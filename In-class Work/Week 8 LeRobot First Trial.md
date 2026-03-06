@@ -45,10 +45,10 @@
 | <img src="Pic/leader.jpg" width="600"> | 
 
 
-- [ ] Follower needs a extra power supply. Use the Belker 36W power supply.
+- [ ] Follower needs an extra power supply. Use the Belker 36W power supply.
 <br> Use the key  (provided in the Belker box) to turn it into 12 V.
 <br> You need to connect it to an extra socket converter (provided in the Belker box).
-<br> Then connect the power supply to the SMPS2Dynamixel board.
+<br> Then connect the power supply to the SMPS2Dynamixel green board.
 <br> See this picture.
 
 |Follower |
@@ -59,7 +59,7 @@
 
 - [ ] Use a USB cable to connect the robot to your computer. We will check with basic communication with lerobot.
 
-In the virtual environment you created, run the command:
+In the virtual environment you created, run the Terminal command:
 
 ```bash
 lerobot-find-port
@@ -100,8 +100,6 @@ print([m.name for m in pkgutil.iter_modules(lerobot.__path__)])
 
 ## 4. Verify Leader
 
-- [ ] Leader Test. You don't need extra power supply to the Leader. The Leader will be powered directly from your computer USB.
-- [ ] Make sure the 
 - [ ] Connect Leader with you computer via USB. Try this code.
 <br> You should modify the `PORT = ... ` based on your own computer.
 
@@ -120,7 +118,7 @@ leader = OmxLeader(cfg)
 leader.connect()
 print("Leader connected on", PORT)
 
-# Show what LeRobot thinks the leader outputs
+# Show the leader outputs
 print("action_features =", getattr(leader, "action_features", None))
 print("\nPrinting leader.get_action()... Move the leader arm. Ctrl+C to stop.\n")
 
@@ -135,6 +133,19 @@ except KeyboardInterrupt:
 finally:
     leader.disconnect()
     print("Disconnected.")
+```
+
+Try to move each joint, see if the corresponding joint angle reading will change.
+<br> Here is my example output:
+
+```python
+keys: ['shoulder_pan.pos', 'shoulder_lift.pos', 'elbow_flex.pos', 'wrist_flex.pos', 'wrist_roll.pos', 'gripper.pos']
+{'elbow_flex.pos': 4.51770451770453,
+ 'gripper.pos': 59.87789987789988,
+ 'shoulder_lift.pos': -50.37851037851038,
+ 'shoulder_pan.pos': 2.5934065934065935,
+ 'wrist_flex.pos': 22.68620268620269,
+ 'wrist_roll.pos': 171.82417582417582}
 ```
 
 ## 5. Verify Follower
