@@ -36,8 +36,8 @@ pixi init roswin
 cd roswin
 ```
 
-Please note the full ROS instlation with require 4 GB disk in your C drive.<br>
-Since this is not system-wide insllation, you can easily delete the whole folder after this semester.<br>
+Since this is not system-wide insllation, the full installation will only create a folder about 4 GB in your C drive.<br>
+you can easily delete the whole folder after this semester.
 
 #### :hammer: step 3. ROS set-up
 Now, go to the C Drive -> User -> YourName -> roswin folder, open `pixi.toml` using text editor.<br>
@@ -71,3 +71,20 @@ Close Powershell, then reopen. Remove safety check
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
+
+#### :hammer: step 4. ROS check
+Open a new PowerShell, do
+```bash
+cd C:\Users\YourName\roswin
+pixi shell
+```
+
+check basic ROS:
+```bash
+ros2 --help
+```
+
+check manipulator `moveit` packages:
+```bash
+ros2 pkg list | findstr moveit
+```
