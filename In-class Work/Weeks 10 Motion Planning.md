@@ -1,4 +1,4 @@
-# Week 10: Motion Planning
+# Week 10: Motion Planning & ROS
 
 ---------------
 #### :dizzy: **Date :** March 18
