@@ -93,3 +93,15 @@ ros2 pkg list | findstr moveit
 ## 3. ROS 2 MoveIt
 The `MoveIt` is a commonly-used motion planning, manipulation, and kinematics framework in ROS.<br>
 https://moveit.ai/
+
+Again, make sure you are in pixi-based ROS env.<br>
+If not sure, restart your PowerShell,
+```bash
+cd C:\Users\YourName\roswin
+pixi shell
+```
+
+Then start a MoveIt Demo in PowerShell:
+```bash
+ros2 launch moveit_resources_panda_moveit_config demo.launch.py
+```
