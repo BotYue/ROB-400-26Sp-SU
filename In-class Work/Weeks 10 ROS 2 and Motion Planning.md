@@ -118,26 +118,29 @@ Your PowerShell should show no error, and you will get a new Visulization Window
 
 | Left: some part of PowerShell; Right: new Visulization Window|
 |---------------------|
-| <img src="Pic/ros2_launch_movit_demo.png" width="900"> | 
+| <img src="Pic/ros2_launch_movit_demo.png" width="800"> | 
 
 
 - [ ] In the Window, the one buttom-left side, click "Add".<br>
 Add the MotionPlanning.
 
+<img src="Pic/ros2_add_motion_plan.png" width="400">
+
 - [ ] In the new section, click "Planning" tab, select "Planning Group" as "panda_arm".<br>
-You will see 3 orthogonal circles rendered.<br>
+You will see 3 orthogonal circles rendered in the Simulation.<br>
 You can directly drag and move this arm; Or you can go to "Joints" tab to set certain joints.
 
 - [ ] In the new section, go to "Context" tab. Set as "ompl" and "RRTConectkConfigDefault".<br?
       Note other planners should also work. This is just a commonly-used one.
+      
+<img src="Pic/ros2_RRT.png" width="300">
 
 - [ ] Go back to the "Planning" tab, set "State State" as "ready", "Goal State" as "extended".<br>
 Then click "Plannning", do you see the simulation result?
 
 - [ ] You are free to change the settings, for example, drag the manipulator to somewhere else, set as "Goal State" as "Current". And do planning again.<br>
-Note some self-defined positions may fail the planning.
-
-
+Note some self-defined positions may fail the planning.<br>
+If failed, just try another position.
 
 
 https://github.com/user-attachments/assets/86fbd5d0-0c40-4605-b562-719e92c48190
