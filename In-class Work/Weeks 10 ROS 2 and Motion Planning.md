@@ -16,8 +16,13 @@
 
 In this lab, we install ROS2 Humble + MoveIt using the Pixi-based environment provided by RoboStack.<br>
 https://github.com/RoboStack/ros-humble <br>
-This method does not require system-wide installation and works inside a local environment.
+This method does not require system-wide installation. It works inside a local environment.
 
 The following steps listed here are for Windows, but the same idea also works for macOS with minor change.<br>
 If you are in macOS, please check with ChatGPT on how to adapt the installation.
 
+#### step 1. pixi set-up
+In Windows, open PowerShell, do
+```bash
+irm https://pixi.sh/install.ps1 | iex
+```
