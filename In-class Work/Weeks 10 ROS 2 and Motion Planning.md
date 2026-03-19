@@ -39,6 +39,10 @@ cd roswin
 Since this is not system-wide insllation, the full installation will only create a folder about 4 GB in your C drive.<br>
 you can easily delete the whole folder after this semester.
 
+|  |
+|---------------------|
+| <img src="Pic/ros2_size.png" width="400"> | 
+
 #### :hammer: step 3. ROS set-up
 Now, go to the C Drive -> User -> YourName -> roswin folder, open `pixi.toml` using text editor.<br>
 Paste this into the `pixi.toml`:
