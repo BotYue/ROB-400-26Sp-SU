@@ -121,6 +121,10 @@ Your PowerShell should show no error, and you will get a new Visulization Window
 | <img src="Pic/ros2_launch_movit_demo.png" width="900"> | 
 
 
-https://github.com/user-attachments/assets/3a100200-7b5a-4d4a-a974-66d2421c422d
+
+
+https://github.com/user-attachments/assets/4b97b4fb-83e4-4889-ab01-83996d8c926f
+
+
 
 
