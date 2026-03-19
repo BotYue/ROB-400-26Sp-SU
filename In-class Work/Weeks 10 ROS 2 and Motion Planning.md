@@ -21,8 +21,53 @@ This method does not require system-wide installation. It works inside a local e
 The following steps listed here are for Windows, but the same idea also works for macOS with minor change.<br>
 If you are in macOS, please check with ChatGPT on how to adapt the installation.
 
-#### step 1. pixi set-up
+#### :hammer: step 1. pixi set-up
 In Windows, open PowerShell, do
 ```bash
 irm https://pixi.sh/install.ps1 | iex
 ```
+
+#### :hammer: step 2. ROS env
+Once done, restart Powershell<br>
+
+create a ROS evnoiment in Powershell
+```bash
+pixi init roswin
+cd roswin
+```
+
+Please note the full ROS instlation with require 4 GB disk in your C drive.<br>
+Since this is not system-wide insllation, you can easily delete the whole folder after this semester.<br>
+
+#### :hammer: step 3. ROS set-up
+Now, go to the C Drive -> User -> YourName -> roswin folder, open `pixi.toml` using text editor.<br>
+Paste this into the `pixi.toml`:
+
+```
+[workspace]
+name = "roswin"
+channels = ["conda-forge", "robostack-staging"]
+platforms = ["win-64"]
+
+[dependencies]
+ros-humble-desktop = "*"
+ros-humble-moveit = "*"
+ros-humble-moveit-resources-panda-moveit-config = "*"
+
+ros-humble-controller-manager = "*"
+ros-humble-ros2-control = "*"
+ros-humble-ros2-controllers = "*"
+ros-humble-joint-state-broadcaster = "*"
+ros-humble-joint-trajectory-controller = "*"
+```
+
+Then in PowerShell, do
+```bash
+pixi install
+```
+
+Close Powershell, then reopen. Remove safety check
+```bash
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
