@@ -85,6 +85,8 @@ cd C:\Users\YourName\roswin
 pixi shell
 ```
 
+<img src="Pic/ros_shell.png" width="700">
+
 check basic ROS:
 ```bash
 ros2 --help
