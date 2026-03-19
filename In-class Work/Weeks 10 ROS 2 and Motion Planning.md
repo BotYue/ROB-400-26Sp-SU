@@ -64,6 +64,8 @@ ros-humble-ros2-controllers = "*"
 ros-humble-joint-state-broadcaster = "*"
 ros-humble-joint-trajectory-controller = "*"
 ```
+This file sets all ROS packages you are going to install. <br>
+If you want to extra ROS packages, you can edit this file later to install a new package.
 
 Then in PowerShell, do
 ```bash
