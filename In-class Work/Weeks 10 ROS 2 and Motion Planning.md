@@ -109,3 +109,9 @@ Then start a MoveIt Demo in PowerShell:
 ```bash
 ros2 launch moveit_resources_panda_moveit_config demo.launch.py
 ```
+Your PowerShell should show no error, and you will get a new Visulization Window opened:
+
+
+| Left: some part of PowerShell; Right: new Visulization Window|
+|---------------------|
+| <img src="Pic/ros2_launch_movit_demo.png" width="900"> | 
