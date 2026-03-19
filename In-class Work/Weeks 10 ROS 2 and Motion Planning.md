@@ -88,3 +88,8 @@ check manipulator `moveit` packages:
 ```bash
 ros2 pkg list | findstr moveit
 ```
+
+
+## 3. ROS 2 MoveIt
+The `MoveIt` is a commonly-used motion planning, manipulation, and kinematics framework in ROS.<br>
+https://moveit.ai/
