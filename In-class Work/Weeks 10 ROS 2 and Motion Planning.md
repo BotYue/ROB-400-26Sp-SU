@@ -21,13 +21,13 @@ This method does not require system-wide installation. It works inside a local e
 The following steps listed here are for Windows, but the same idea also works for macOS with minor change.<br>
 If you are in macOS, please check with ChatGPT on how to adapt the installation.
 
-#### :hammer: step 1. pixi set-up
+- [ ] step 1. pixi set-up
 In Windows, open PowerShell, do
 ```bash
 irm https://pixi.sh/install.ps1 | iex
 ```
 
-#### :hammer: step 2. ROS env
+- [ ] step 2. ROS env
 Once done, restart Powershell<br>
 
 create a ROS evnoiment in Powershell
@@ -43,7 +43,7 @@ you can easily delete the whole folder after this semester.
 |---------------------|
 | <img src="Pic/ros2_size.png" width="400"> | 
 
-#### :hammer: step 3. ROS set-up
+- [ ] step 3. ROS set-up
 Now, go to the C Drive -> User -> YourName -> roswin folder, open `pixi.toml` using text editor.<br>
 Paste this into the `pixi.toml`:
 
@@ -78,7 +78,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
 
-#### :hammer: step 4. ROS check
+- [ ] step 4. ROS check
 Open a new PowerShell, do
 ```bash
 cd C:\Users\YourName\roswin
@@ -97,12 +97,12 @@ check manipulator `moveit` packages:
 ros2 pkg list | findstr moveit
 ```
 
-
-## 3. ROS 2 MoveIt
+----------
+## 3. ROS 2 MoveIt and Motion Planning
 The `MoveIt` is a commonly-used motion planning, manipulation, and kinematics framework in ROS.<br>
 https://moveit.ai/
 
-Again, make sure you are in pixi-based ROS env.<br>
+- [ ] Again, make sure you are in pixi-based ROS env.<br>
 If not sure, restart your PowerShell,
 ```bash
 cd C:\Users\YourName\roswin
@@ -121,9 +121,26 @@ Your PowerShell should show no error, and you will get a new Visulization Window
 | <img src="Pic/ros2_launch_movit_demo.png" width="900"> | 
 
 
+- [ ] In the Window, the one buttom-left side, click "Add".<br>
+Add the MotionPlanning.
+
+- [ ] In the new section, click "Planning" tab, select "Planning Group" as "panda_arm".<br>
+You will see 3 orthogonal circles rendered.<br>
+You can directly drag and move this arm; Or you can go to "Joints" tab to set certain joints.
+
+- [ ] In the new section, go to "Context" tab. Set as "ompl" and "RRTConectkConfigDefault".<br?
+      Note other planners should also work. This is just a commonly-used one.
+
+- [ ] Go back to the "Planning" tab, set "State State" as "ready", "Goal State" as "extended".<br>
+Then click "Plannning", do you see the simulation result?
+
+- [ ] You are free to change the settings, for example, drag the manipulator to somewhere else, set as "Goal State" as "Current". And do planning again.<br>
+Note some self-defined positions may fail the planning.
 
 
-https://github.com/user-attachments/assets/4b97b4fb-83e4-4889-ab01-83996d8c926f
+
+
+https://github.com/user-attachments/assets/86fbd5d0-0c40-4605-b562-719e92c48190
 
 
 
