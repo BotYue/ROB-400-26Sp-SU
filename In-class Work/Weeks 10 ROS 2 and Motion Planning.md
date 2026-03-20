@@ -58,7 +58,9 @@ ros-humble-joint-trajectory-controller = "*"
 ```
 This file sets all ROS packages you are going to install. <br>
 If you want to extra ROS packages, you can edit this file later to install a new package.
+All available packages can be found on: https://robostack.github.io/humble.html
 
+---
 Then in PowerShell, do
 ```bash
 pixi install
