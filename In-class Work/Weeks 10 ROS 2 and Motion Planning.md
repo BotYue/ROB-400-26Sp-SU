@@ -2,17 +2,9 @@
 
 ---------------
 #### :dizzy: **Date :** March 18
+#### :ballot_box_with_check: Please be generous to help others when possible.
 
-
-## 1. OMPL
-
-
-
-
-
-
-
-## 2. ROS 2 Install
+## 1. ROS 2 Install
 
 In this lab, we install ROS2 Humble + MoveIt using the Pixi-based environment provided by RoboStack.<br>
 https://github.com/RoboStack/ros-humble <br>
@@ -98,7 +90,7 @@ ros2 pkg list | findstr moveit
 ```
 
 ----------
-## 3. ROS 2 MoveIt and Motion Planning
+## 2. ROS 2 MoveIt and Motion Planning
 The `MoveIt` is a commonly-used motion planning, manipulation, and kinematics framework in ROS.<br>
 https://moveit.ai/
 
