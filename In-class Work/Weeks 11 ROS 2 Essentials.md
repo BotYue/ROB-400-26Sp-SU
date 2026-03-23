@@ -21,3 +21,15 @@ pixi shell
 ros2 run turtlesim turtlesim_node
 ```
 
+
+- [ ] In the second PowerShell window, do
+
+```bash
+ros2 node list
+```
+
+check
+
+```bash
+rqt
+```
