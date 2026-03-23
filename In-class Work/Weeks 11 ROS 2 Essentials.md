@@ -7,7 +7,7 @@
 ## 1. ROS 2 Turtlesim
 
 
-- [ ] First step, enter pixi-based ROS env in your PowerShell..<br>
+- [ ] To start, enter pixi-based ROS env in your PowerShell..<br>
 Note, every newly-opened PowerShell window needs to do this first.
 
 ```bash
@@ -15,5 +15,9 @@ cd C:\Users\YourName\roswin
 pixi shell
 ```
 
+- [ ] In the first PowerShell window, do
 
+```bash
+ros2 run turtlesim turtlesim_node
+```
 
