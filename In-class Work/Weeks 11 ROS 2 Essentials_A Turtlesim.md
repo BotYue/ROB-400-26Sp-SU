@@ -1,4 +1,4 @@
-# Week 11: ROS 2 Essentials Part A Turtlesim
+# Week 11: ROS 2 Essentials Part A – Turtlesim
 
 ---------------
 #### :dizzy: **Date :** March 27
