@@ -6,7 +6,6 @@
 
 ## 1. ROS 2 Turtlesim
 
-
 - [ ] To start, enter pixi-based ROS env in your PowerShell..<br>
 Note, every newly-opened PowerShell window needs to do this first.
 
@@ -33,3 +32,8 @@ check
 ```bash
 rqt
 ```
+
+
+## 2. ROS 2 with Motor Control
+
+## 3. ROS 2 with Camera Stream
