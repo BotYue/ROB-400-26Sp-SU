@@ -4,7 +4,8 @@
 #### :dizzy: **Date :** March 27
 #### :ballot_box_with_check: Please be generous to help others when possible.
 
-## 1. ROS 2 Turtlesim
+## ROS 2 Turtlesim
+## The Part A in a purely simulation setting.
 
 - [ ] To start, enter pixi-based ROS env in your PowerShell..<br>
 Note, every newly-opened PowerShell window needs to do this first.
