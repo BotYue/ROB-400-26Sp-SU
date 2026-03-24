@@ -8,11 +8,12 @@
 ## ROS 2 with Motor Control
 ## Use Open RB150 Starter Kit with Dynamixel Motor
 
-In Arduino IDE, do the previous settings (see the final part of Slides Week 7 Trajectory Generation.pptx)
+### Step 1. OpenRB Arduino Set-up
+- [ ] In Arduino IDE, do the previous settings (see the final part of Slides Week 7 Trajectory Generation.pptx)
 
 Make sure board i OpenRB-150, Port is properly selected.
 
-Run this code in Arduino IDE
+- [ ] Run this code in Arduino IDE
 
 ```c
 #include <Dynamixel2Arduino.h>
@@ -60,3 +61,89 @@ void loop() {
 }
 ```
 
+### Step 2. ROS 2 Communication Set-up
+
+- [ ] Now, enter pixi-based ROS env in your PowerShell..<br>
+Note, every newly-opened PowerShell window needs to do this first.
+
+```bash
+cd C:\Users\YourName\roswin
+pixi shell
+```
+
+- [ ] Install the Python serial port access library `pyerial` in this env. https://github.com/pyserial/pyserial
+
+```bash
+pixi add pyserial
+pixi shell
+```
+
+- [ ] Create a Python code and place it under the roswin folder. Suppose it is named `motor_test.py`
+
+You should adjust the `COM15` to be your own port name.
+
+```python
+import serial
+import time
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Int32
+
+
+class SerialMotorNode(Node):
+
+    def __init__(self):
+
+        super().__init__("serial_motor_node")
+
+        self.ser = serial.Serial("COM15", 115200, timeout=1)
+        time.sleep(2)
+
+        self.create_subscription(
+            Int32,
+            "goal_position",
+            self.callback,
+            10,
+        )
+
+        self.get_logger().info("Serial motor node ready")
+
+    def callback(self, msg):
+
+        goal = msg.data
+        cmd = f"{goal}\n"
+
+        self.ser.write(cmd.encode())
+
+        self.get_logger().info(f"Sent {goal}")
+
+
+def main():
+
+    rclpy.init()
+
+    node = SerialMotorNode()
+
+    rclpy.spin(node)
+
+    rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()
+```
+- [ ] In the same PowerShell, run this Python.
+
+```bash
+python motor_test.py
+```
+
+### Step 3. ROS 2 Publish
+
+- [ ] Now, open a **Second PowerShell window**, do this again first:
+
+```bash
+cd C:\Users\YourName\roswin
+pixi shell
+```
