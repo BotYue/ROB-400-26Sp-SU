@@ -1,12 +1,12 @@
-# Week 11: ROS 2 Essentials Part B
+# Week 11: ROS 2 Essentials B Motor Control
 
 ---------------
 #### :dizzy: **Date :** March 27
 #### :ballot_box_with_check: Please be generous to help others when possible.
 
 
-## 2. ROS 2 with Motor Control
-### Use Open RB150 Starter Kit with Dynamixel Motor
+## ROS 2 with Motor Control
+## Use Open RB150 Starter Kit with Dynamixel Motor
 
 In Arduino IDE, do the previous settings (see the final part of Slides Week 7 Trajectory Generation.pptx)
 
