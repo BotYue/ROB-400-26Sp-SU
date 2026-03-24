@@ -8,6 +8,7 @@
 ## ROS 2 with Motor Control
 ## Use Open RB150 Starter Kit with Dynamixel Motor
 
+----------
 ### Step 1. OpenRB Arduino Set-up
 - [ ] In Arduino IDE, do the previous settings (see the final part of Slides Week 7 Trajectory Generation.pptx)
 
@@ -61,6 +62,7 @@ void loop() {
 }
 ```
 
+-----------
 ### Step 2. ROS 2 Communication Set-up
 
 - [ ] Now, enter pixi-based ROS env in your PowerShell..<br>
@@ -139,6 +141,7 @@ if __name__ == "__main__":
 python motor_test.py
 ```
 
+-----------
 ### Step 3. ROS 2 Publish
 
 - [ ] Now, open a **Second PowerShell window**, do this again first:
@@ -146,4 +149,16 @@ python motor_test.py
 ```bash
 cd C:\Users\YourName\roswin
 pixi shell
+```
+
+- [ ] In this second PowerShell, do this first
+
+```bash
+ros2 topic list
+```
+
+- [ ] In this second PowerShell, do this second
+
+```bash
+ros2 topic pub /goal_position std_msgs/msg/Int32 "{data: 2048}"
 ```
