@@ -1,4 +1,4 @@
-# Week 11: ROS 2 Essentials C Camera Input
+# Week 11: ROS 2 Essentials Part C – Camera Input
 
 ---------------
 #### :dizzy: **Date :** March 27
