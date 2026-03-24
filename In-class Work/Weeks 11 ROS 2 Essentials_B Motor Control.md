@@ -1,4 +1,4 @@
-# Week 11: ROS 2 Essentials B Motor Control
+# Week 11: ROS 2 Essentials Part B – Motor Control
 
 ---------------
 #### :dizzy: **Date :** March 27
