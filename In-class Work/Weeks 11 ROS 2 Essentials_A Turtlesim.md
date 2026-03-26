@@ -10,8 +10,11 @@
 
 :large_blue_diamond: Can be distributed among in any way. Such as, Student 1 → Part B; Student 2 → Part B + Part C; Student 3 → Part C
 
-## ROS 2 Turtlesim
 ## The Part A in a purely simulation setting.
+#### This part basically follows the official tutorial, but no need to install extras.
+#### https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html
+
+------
 
 - [ ] To start, enter pixi-based ROS env in your PowerShell..<br>
 Note, every newly-opened PowerShell window needs to do this first.
