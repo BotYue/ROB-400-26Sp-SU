@@ -15,7 +15,7 @@
 #### https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html
 
 ------
-
+### Step 1. Start Turtlesim
 - [ ] To start, enter pixi-based ROS env in your PowerShell..<br>
 Note, every newly-opened PowerShell window needs to do this first.
 
@@ -31,16 +31,19 @@ ros2 run turtlesim turtlesim_node
 ```
 
 
-- [ ] In the second PowerShell window, do
+- [ ] In the second PowerShell window, try the following
 
 ```bash
 ros2 node list
+ros2 topic list
+ros2 service list
+ros2 action list
 ```
 
-check
+- [ ] Next, open the thrid PowerShell window, do
 
 ```bash
 rqt
 ```
-
+In the opened window, go to "Plugins -> Topics -> Topic Monitor"
 
