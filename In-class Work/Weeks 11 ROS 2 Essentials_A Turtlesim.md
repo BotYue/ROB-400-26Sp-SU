@@ -53,7 +53,7 @@ In the opened window, go to "Plugins -> Topics -> Topic Monitor"
 
 | |
 |---------------------|
-| <img src="Pic/ros2_rqt.png" width="400"> | 
+| <img src="Pic/ros2_rqt.png" width="500"> | 
 
 ----------
 ### Step 2. Understanding Nodes
@@ -79,3 +79,6 @@ rqt
 
 In the opened rqt windows, go to "Plugins -> Introspection -> Node Graph", you will get this tool.
 
+| |
+|---------------------|
+| <img src="Pic/ros2_rqt_graph.png" width="500"> | 
