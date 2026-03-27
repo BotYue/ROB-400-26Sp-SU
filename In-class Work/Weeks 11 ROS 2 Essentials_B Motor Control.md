@@ -8,11 +8,17 @@
 ## ROS 2 with Motor Control
 ## Use Open RB150 Starter Kit with Dynamixel Motor
 
+| Connect to your computer using USB-C |
+|---------------------|
+| <img src="Pic/ros2_dynamixel.jpg" width="600"> | 
+
 ----------
 ### Step 1. OpenRB Arduino Set-up
 - [ ] In Arduino IDE, do the previous settings (see the final part of Slides Week 7 Trajectory Generation.pptx)
 
-Make sure board i OpenRB-150, Port is properly selected.
+Make sure board is OpenRB-150 in Arduino IDE, 
+
+Make sure Port is properly selected in Arduino IDE.
 
 - [ ] Run this code in Arduino IDE
 
@@ -144,7 +150,7 @@ python motor_test.py
 -----------
 ### Step 3. ROS 2 Publish
 
-- [ ] Now, open a **Second PowerShell window**, do this again first:
+- [ ] Now, open a **Second PowerShell window**, enter the ROS env:
 
 ```bash
 cd C:\Users\YourName\roswin
@@ -162,3 +168,7 @@ ros2 topic list
 ```bash
 ros2 topic pub /goal_position std_msgs/msg/Int32 "{data: 2048}"
 ```
+
+You can change the data value 2048 to some else, such as 1024, 512, ...
+
+You should see that the motor rotates a certain angle.
