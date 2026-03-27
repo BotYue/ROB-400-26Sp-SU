@@ -54,3 +54,28 @@ In the opened window, go to "Plugins -> Topics -> Topic Monitor"
 | |
 |---------------------|
 | <img src="Pic/ros2_rqt.png" width="400"> | 
+
+----------
+### Step 2. Understanding Nodes
+
+Follow the steps in the official tutorial:<br>
+https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html
+
+Repeat their work.
+
+----------
+### Step 3. Understanding Topics
+
+Follow the steps in the official tutorial:<br>
+https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html
+
+Repeat their work.
+
+Note, `ros2 run rqt_graph rqt_graph` may not work in Windows. Instead, do this,
+
+```bash
+rqt
+```
+
+In the opened rqt windows, go to "Plugins -> Introspection -> Node Graph", you will get this tool.
+
