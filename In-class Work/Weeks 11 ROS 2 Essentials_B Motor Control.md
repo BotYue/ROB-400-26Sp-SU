@@ -20,6 +20,11 @@ Make sure board is OpenRB-150 in Arduino IDE,
 
 Make sure Port is properly selected in Arduino IDE.
 
+
+| |
+|---------------------|
+| <img src="Pic/ROS_arduino_port.png" width="300"> | 
+
 - [ ] Run this code in Arduino IDE
 
 ```c
