@@ -94,7 +94,15 @@ if __name__ == "__main__":
 ----------
 ### Step 3. subscribe the ROS 2 WebCam topic
 
-Another PowerShell terminal,
+Create a Python code and place it under the roswin folder. Suppose it is named `webcam_view.py`
+
+In the second PowerShell, run this Python file in command line.
+
+```bash
+python webcam_view.py
+```
+
+Python code:
 
 ```python
 import cv2
@@ -147,3 +155,5 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+Once running, open a third PowerShell, run `rqt`. Check the Node Graph.
