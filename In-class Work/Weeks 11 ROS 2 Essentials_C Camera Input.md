@@ -156,4 +156,9 @@ if __name__ == "__main__":
     main()
 ```
 
+
+| |
+|---------------------|
+| <img src="Pic/ROS_camera_feed.png" width="500"> | 
+
 Once running, open a third PowerShell, run `rqt`. Check the Node Graph.
