@@ -29,7 +29,7 @@ pixi shell
 ```bash
 ros2 run turtlesim turtlesim_node
 ```
-
+You will get a new turtle window!
 
 - [ ] In the second PowerShell window, try the following
 
@@ -40,6 +40,10 @@ ros2 service list
 ros2 action list
 ```
 
+| Two PowerShell windows and a Turtlesim window |
+|---------------------|
+| <img src="Pic/ros2_startturt.png" width="800"> | 
+
 - [ ] Next, open the thrid PowerShell window, do
 
 ```bash
@@ -47,3 +51,6 @@ rqt
 ```
 In the opened window, go to "Plugins -> Topics -> Topic Monitor"
 
+| |
+|---------------------|
+| <img src="Pic/ros2_rqt.png" width="400"> | 
