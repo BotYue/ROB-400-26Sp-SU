@@ -31,6 +31,15 @@ pixi shell
 ----------
 ### Step 2. WebCam as ROS 2 Node
 
+Create a Python code and place it under the roswin folder. Suppose it is named `webcam_set.py`
+
+In the same PowerShell, run this Python file in command line.
+
+```bash
+python webcam_set.py
+```
+Python code:
+
 ```python
 import cv2
 
